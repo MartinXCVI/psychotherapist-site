@@ -3,6 +3,7 @@
 $routes = [
   '/' => 'controllers/index.php',
   '/about' => 'controllers/about.php',
+  '/help' => 'controllers/help.php',
   '/contact' => 'controllers/contact.php'
 ];
 

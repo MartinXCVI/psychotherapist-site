@@ -1,0 +1,237 @@
+html body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Prata", system-ui;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.hero-title {
+  font-size: 4.75rem;
+  color: #f6f6f6;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.container-fluid #navbarNav {
+  justify-content: center;
+}
+
+.container-fluid .navbar-brand {
+  margin-right: 0;
+}
+
+.header .bg-body-tertiary {
+  background-color: unset !important;
+}
+
+.nav-item .nav-link {
+  color: #f4f4f4;
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  padding-inline: 0.75rem;
+}
+
+.index-title {
+  color: #4F772D;
+}
+
+#index-header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#index-header h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#index-header::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #254221;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#index-header::after {
+  background-image: url("../assets/images/index-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+body .main {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-btns .landing-btn {
+  padding: 1rem 1.25rem;
+  border-radius: 3rem;
+  color: #f6f6f6;
+}
+.landing-btns .contact-btn {
+  border: 2px solid #254221;
+  background-color: #254221;
+}
+.landing-btns .contact-btn:hover {
+  background-color: #90A955;
+  color: #151515;
+}
+.landing-btns .about-btn {
+  border: 2px solid #b6bd6e;
+  background-color: #b6bd6e;
+}
+.landing-btns .about-btn:hover {
+  background-color: #ECF39E;
+  color: #151515;
+}
+
+.testimonial-index {
+  min-height: 80vh;
+  background-color: #f4f4f4;
+}
+
+.testimonial-index figure {
+  width: 25%;
+}
+
+.list-group .list-group-item {
+  min-width: 12rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0;
+}
+.list-group .list-group-item a {
+  min-width: 100% !important;
+  color: #151515;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  transition: 0.3s linear all;
+}
+.list-group .list-group-item .anxiety {
+  border: 2px solid #B0C4DE;
+}
+.list-group .list-group-item .anxiety:hover {
+  background-color: #B0C4DE;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .depression {
+  border: 2px solid #2F4F4F;
+}
+.list-group .list-group-item .depression:hover {
+  background-color: #2F4F4F;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .trauma {
+  border: 2px solid #8B0000;
+}
+.list-group .list-group-item .trauma:hover {
+  background-color: #8B0000;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .grief {
+  border: 2px solid #36454F;
+}
+.list-group .list-group-item .grief:hover {
+  background-color: #36454F;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .stress {
+  border: 2px solid #FF6347;
+}
+.list-group .list-group-item .stress:hover {
+  background-color: #FF6347;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .addiction {
+  border: 2px solid #4B0082;
+}
+.list-group .list-group-item .addiction:hover {
+  background-color: #4B0082;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .phobias {
+  border: 2px solid #4682B4;
+}
+.list-group .list-group-item .phobias:hover {
+  background-color: #4682B4;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .burnout {
+  border: 2px solid #CC5500;
+}
+.list-group .list-group-item .burnout:hover {
+  background-color: #CC5500;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .insomnia {
+  border: 2px solid #191970;
+}
+.list-group .list-group-item .insomnia:hover {
+  background-color: #191970;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .loneliness {
+  border: 2px solid #9370DB;
+}
+.list-group .list-group-item .loneliness:hover {
+  background-color: #9370DB;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .anger {
+  border: 2px solid #B22222;
+}
+.list-group .list-group-item .anger:hover {
+  background-color: #B22222;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+.list-group .list-group-item .guilt {
+  border: 2px solid #556B2F;
+}
+.list-group .list-group-item .guilt:hover {
+  background-color: #556B2F;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+
+/*# sourceMappingURL=styles.css.map */

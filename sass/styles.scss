@@ -1,0 +1,138 @@
+@use './includes/colors' as color;
+@use './includes/typography' as font;
+@use './includes/variables' as var;
+@use './includes/_mixins.scss' as mx;
+
+@use './global.scss';
+
+.index-title {
+  color: color.$green;
+}
+
+#index-header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#index-header h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+#index-header::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  @include mx.bgColor(color.$darkGreen);
+  opacity: 0.5;
+}
+
+#index-header::after {
+  @include mx.bgCenter('../assets/images/index-hero.jpg');
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+body .main {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-btns {
+  .landing-btn {
+    padding: 1rem 1.25rem;
+    border-radius: 3rem;
+    color: color.$white;
+  }
+  .contact-btn {
+    border: 2px solid color.$darkGreen;
+    background-color: color.$darkGreen;
+    &:hover {
+      background-color: color.$softGreen;
+      color: color.$black;
+    }
+  }
+  .about-btn {
+    border: 2px solid color.$darkCream;
+    background-color: color.$darkCream;
+    &:hover {
+      background-color: color.$cream;
+      color: color.$black;
+    }
+  }
+}
+
+.testimonial-index {
+  min-height: 80vh;
+  background-color: color.$whiteSmoke;
+}
+
+.testimonial-index figure {
+  width: 25%;
+}
+
+.list-group .list-group-item {
+  min-width: 12rem;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0;
+  a {
+    min-width: 100% !important;
+    color: color.$black;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: var.$trs-03;
+  }
+
+  .anxiety {
+    @include mx.border2(#B0C4DE);
+  }
+  .depression {
+    @include mx.border2(#2F4F4F);
+  }
+  .trauma {
+    @include mx.border2(#8B0000);
+  }
+  .grief {
+    @include mx.border2(#36454F);
+  }
+  .stress {
+    @include mx.border2(#FF6347);
+  }
+  .addiction {
+    @include mx.border2(#4B0082);
+  }
+  .phobias {
+    @include mx.border2(#4682B4);
+  }
+  .burnout {
+    @include mx.border2(#CC5500);
+  }
+  .insomnia {
+    @include mx.border2(#191970);
+  }
+  .loneliness {
+    @include mx.border2(#9370DB);
+  }
+  .anger {
+    @include mx.border2(#B22222);
+  }
+  .guilt {
+    @include mx.border2(#556B2F);
+  }
+}

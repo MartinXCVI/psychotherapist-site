@@ -1,0 +1,46 @@
+@use './includes/colors' as color;
+@use './includes/typography' as font;
+@use './includes/variables' as var;
+@use './includes/_mixins.scss' as mx;
+
+html body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+  font-family: font.$titleFont;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.hero-title {
+  font-size: 4.75rem;
+  color: color.$white;
+}
+
+p {
+  font-size: font.$paraSize;
+}
+
+.container-fluid #navbarNav {
+  justify-content: center;
+}
+
+.container-fluid .navbar-brand {
+  margin-right: 0;
+}
+
+.header .bg-body-tertiary {
+  background-color: unset !important;
+}
+
+.nav-item .nav-link {
+  color: color.$whiteSmoke;
+  font-size: 1.25rem;
+}
+
+.nav-item {
+  padding-inline: 0.75rem;
+}
