@@ -1,4 +1,4 @@
-<div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100">
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5">
   <h2 class="mb-5">Main Issues I Can Help With</h2>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">

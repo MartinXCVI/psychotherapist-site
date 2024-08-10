@@ -82,6 +82,19 @@ body .main {
   width: 25%;
 }
 
+.caption-underline {
+  width: 50%;
+  border-top: 4px solid color.$gray;
+}
+
+.testimonial-index .testimonial-index-text {
+  width: 75%;
+  
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 .list-group .list-group-item {
   min-width: 12rem;
   border: 0;
@@ -134,5 +147,89 @@ body .main {
   }
   .guilt {
     @include mx.border2(#556B2F);
+  }
+}
+
+.testimonial-index .index-testimonial-btn {
+  border: 2px solid color.$green;
+  background-color: transparent;
+  color: color.$green;
+  padding: 0.5rem 1.75rem;
+  border-radius: 3rem;
+  &:hover {
+    background-color: color.$green;
+    color: color.$white;
+  }
+}
+
+.quotes-carousel {
+  min-width: 100vw;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.quotes-carousel::before {
+  content: '';
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  @include mx.bgColor(color.$softBlack);
+  opacity: 0.4;
+}
+
+.quotes-carousel::after {
+  content: '';
+  inset: 0;
+  z-index: -5;
+  position: absolute;
+  @include mx.bgCenter('../assets/images/quotes-bg.jpg');
+  opacity: 1;
+}
+
+.footer {
+  background-color: color.$green;
+}
+
+.blockquote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blockquote p {
+  width: 50%;
+}
+
+.quote-text {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-author {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@media all and (max-width: 480px) {
+ 
+  .testimonial-index figure {
+    width: 35%;
+  }
+
+  .testimonial-index .testimonial-index-text {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .blockquote p {
+    width: 90%;
   }
 }

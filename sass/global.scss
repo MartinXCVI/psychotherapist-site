@@ -3,8 +3,14 @@
 @use './includes/variables' as var;
 @use './includes/_mixins.scss' as mx;
 
+*::selection {
+  background-color: color.$darkGreen;
+  color:  color.$white;
+}
+
 html body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2 {

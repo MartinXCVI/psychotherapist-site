@@ -1,5 +1,11 @@
+*::selection {
+  background-color: #254221;
+  color: #f6f6f6;
+}
+
 html body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -120,6 +126,18 @@ body .main {
   width: 25%;
 }
 
+.caption-underline {
+  width: 50%;
+  border-top: 4px solid #aaaaaa;
+}
+
+.testimonial-index .testimonial-index-text {
+  width: 75%;
+}
+.testimonial-index .testimonial-index-text p {
+  font-size: 1.5rem;
+}
+
 .list-group .list-group-item {
   min-width: 12rem;
   border: 0;
@@ -232,6 +250,92 @@ body .main {
   background-color: #556B2F;
   color: #f6f6f6;
   text-shadow: 0 0 0.25rem #151515;
+}
+
+.testimonial-index .index-testimonial-btn {
+  border: 2px solid #4F772D;
+  background-color: transparent;
+  color: #4F772D;
+  padding: 0.5rem 1.75rem;
+  border-radius: 3rem;
+}
+.testimonial-index .index-testimonial-btn:hover {
+  background-color: #4F772D;
+  color: #f6f6f6;
+}
+
+.quotes-carousel {
+  min-width: 100vw;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.quotes-carousel::before {
+  content: "";
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  background: #252525;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.quotes-carousel::after {
+  content: "";
+  inset: 0;
+  z-index: -5;
+  position: absolute;
+  background-image: url("../assets/images/quotes-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.footer {
+  background-color: #4F772D;
+}
+
+.blockquote {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blockquote p {
+  width: 50%;
+}
+
+.quote-text {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-author {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@media all and (max-width: 480px) {
+  .testimonial-index figure {
+    width: 35%;
+  }
+  .testimonial-index .testimonial-index-text {
+    width: 90%;
+  }
+}
+@media all and (max-width: 767px) {
+  .blockquote p {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
