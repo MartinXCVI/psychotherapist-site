@@ -21,7 +21,7 @@
   color: color.$green;
 }
 
-#index-header, #about-header {
+#index-header, #about-header, #help-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -35,7 +35,7 @@
 }
 
 
-#index-header::before, #about-header::before {
+#index-header::before, #about-header::before, #help-header::before {
   content: '';
   inset: 0;
   position: absolute;
@@ -55,6 +55,15 @@
 
 #about-header::after {
   @include mx.bgCenter('../assets/images/about-hero.jpg');
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#help-header::after {
+  @include mx.bgCenter('../assets/images/help-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -171,7 +180,7 @@ body .main {
   }
 }
 
-.testimonial-index .index-testimonial-btn {
+.testimonial-index .index-testimonial-btn, .benefits-btn-section .index-testimonial-btn {
   border: 2px solid color.$green;
   background-color: transparent;
   color: color.$green;
@@ -293,6 +302,82 @@ body .main {
   }
 }
 
+#help-bg {
+  min-height: 90vh;
+  position: relative;
+  &::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    @include mx.bgCenter('../assets/images/help-bg.jpg');
+    background-attachment: fixed;
+    opacity: 0.9;
+  }
+
+  .help-bg-quote {
+    font-size: 1.75rem;
+    color: color.$white;
+    text-shadow: 0 0 0.25rem color.$black;
+  }
+  .help-bg-author {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: color.$white;
+    text-shadow: 0 0 0.25rem color.$black;
+  }
+}
+
+#benefits-intro {
+  background-color: color.$whiteSmoke;
+}
+
+.benefits-list .benefit-item {
+  font-size: 1.1rem;
+}
+
+#help-contact-bg {
+  min-height: 100vh;
+  position: relative;
+  &::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    @include mx.bgCenter('../assets/images/help-bg-contact.jpg');
+    opacity: 0.8;
+  }
+
+  h3 {
+    width: 65%;
+    color: color.$white;
+    text-shadow: 0 0 0.5rem color.$black;
+    font-size: 3.75rem;
+  }
+
+  p {
+    width: 60%;
+    color: color.$white;
+    text-shadow: 0 0 0.35rem color.$black;
+    font-size: 1.5rem;
+  }
+
+  .help-contact-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    color: color.$white;
+    border: 2px solid color.$white;
+    text-shadow: 0 0 0.5rem color.$black;
+    box-shadow: 0 0 0.15rem 0 color.$black;
+    &:hover {
+    border: 2px solid color.$softGreen;
+    background-color: color.$softGreen;
+    color: color.$white;
+    }
+  } 
+}
+
+
 @media all and (max-width: 480px) {
  
   .testimonial-index figure {
@@ -337,5 +422,9 @@ body .main {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
+  }
+
+  #help-contact-bg h3, #help-contact-bg p {
+    width: 95%;
   }
 }

@@ -75,7 +75,7 @@ p {
   color: #4F772D;
 }
 
-#index-header, #about-header {
+#index-header, #about-header, #help-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -88,7 +88,7 @@ p {
   transform: translateX(-50%);
 }
 
-#index-header::before, #about-header::before {
+#index-header::before, #about-header::before, #help-header::before {
   content: "";
   inset: 0;
   position: absolute;
@@ -114,6 +114,18 @@ p {
 
 #about-header::after {
   background-image: url("../assets/images/about-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#help-header::after {
+  background-image: url("../assets/images/help-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,6 +206,7 @@ body .main {
 }
 .list-group .list-group-item .anxiety {
   border: 2px solid #B0C4DE;
+  border-left: 26px solid #B0C4DE;
 }
 .list-group .list-group-item .anxiety:hover {
   background-color: #B0C4DE;
@@ -202,6 +215,7 @@ body .main {
 }
 .list-group .list-group-item .depression {
   border: 2px solid #2F4F4F;
+  border-left: 26px solid #2F4F4F;
 }
 .list-group .list-group-item .depression:hover {
   background-color: #2F4F4F;
@@ -210,6 +224,7 @@ body .main {
 }
 .list-group .list-group-item .trauma {
   border: 2px solid #8B0000;
+  border-left: 26px solid #8B0000;
 }
 .list-group .list-group-item .trauma:hover {
   background-color: #8B0000;
@@ -218,6 +233,7 @@ body .main {
 }
 .list-group .list-group-item .grief {
   border: 2px solid #36454F;
+  border-left: 26px solid #36454F;
 }
 .list-group .list-group-item .grief:hover {
   background-color: #36454F;
@@ -226,6 +242,7 @@ body .main {
 }
 .list-group .list-group-item .stress {
   border: 2px solid #FF6347;
+  border-left: 26px solid #FF6347;
 }
 .list-group .list-group-item .stress:hover {
   background-color: #FF6347;
@@ -234,6 +251,7 @@ body .main {
 }
 .list-group .list-group-item .addiction {
   border: 2px solid #4B0082;
+  border-left: 26px solid #4B0082;
 }
 .list-group .list-group-item .addiction:hover {
   background-color: #4B0082;
@@ -242,6 +260,7 @@ body .main {
 }
 .list-group .list-group-item .phobias {
   border: 2px solid #4682B4;
+  border-left: 26px solid #4682B4;
 }
 .list-group .list-group-item .phobias:hover {
   background-color: #4682B4;
@@ -250,6 +269,7 @@ body .main {
 }
 .list-group .list-group-item .burnout {
   border: 2px solid #CC5500;
+  border-left: 26px solid #CC5500;
 }
 .list-group .list-group-item .burnout:hover {
   background-color: #CC5500;
@@ -258,6 +278,7 @@ body .main {
 }
 .list-group .list-group-item .insomnia {
   border: 2px solid #191970;
+  border-left: 26px solid #191970;
 }
 .list-group .list-group-item .insomnia:hover {
   background-color: #191970;
@@ -266,6 +287,7 @@ body .main {
 }
 .list-group .list-group-item .loneliness {
   border: 2px solid #9370DB;
+  border-left: 26px solid #9370DB;
 }
 .list-group .list-group-item .loneliness:hover {
   background-color: #9370DB;
@@ -274,6 +296,7 @@ body .main {
 }
 .list-group .list-group-item .anger {
   border: 2px solid #B22222;
+  border-left: 26px solid #B22222;
 }
 .list-group .list-group-item .anger:hover {
   background-color: #B22222;
@@ -282,6 +305,7 @@ body .main {
 }
 .list-group .list-group-item .guilt {
   border: 2px solid #556B2F;
+  border-left: 26px solid #556B2F;
 }
 .list-group .list-group-item .guilt:hover {
   background-color: #556B2F;
@@ -289,14 +313,14 @@ body .main {
   text-shadow: 0 0 0.25rem #151515;
 }
 
-.testimonial-index .index-testimonial-btn {
+.testimonial-index .index-testimonial-btn, .benefits-btn-section .index-testimonial-btn {
   border: 2px solid #4F772D;
   background-color: transparent;
   color: #4F772D;
   padding: 0.5rem 1.75rem;
   border-radius: 3rem;
 }
-.testimonial-index .index-testimonial-btn:hover {
+.testimonial-index .index-testimonial-btn:hover, .benefits-btn-section .index-testimonial-btn:hover {
   background-color: #4F772D;
   color: #f6f6f6;
 }
@@ -418,6 +442,83 @@ body .main {
   background-color: #4F772D;
 }
 
+#help-bg {
+  min-height: 90vh;
+  position: relative;
+}
+#help-bg::after {
+  content: "";
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  background-image: url("../assets/images/help-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+#help-bg .help-bg-quote {
+  font-size: 1.75rem;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+#help-bg .help-bg-author {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #151515;
+}
+
+#benefits-intro {
+  background-color: #f4f4f4;
+}
+
+.benefits-list .benefit-item {
+  font-size: 1.1rem;
+}
+
+#help-contact-bg {
+  min-height: 100vh;
+  position: relative;
+}
+#help-contact-bg::after {
+  content: "";
+  inset: 0;
+  z-index: -1;
+  position: absolute;
+  background-image: url("../assets/images/help-bg-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+#help-contact-bg h3 {
+  width: 65%;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.5rem #151515;
+  font-size: 3.75rem;
+}
+#help-contact-bg p {
+  width: 60%;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.35rem #151515;
+  font-size: 1.5rem;
+}
+#help-contact-bg .help-contact-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  text-shadow: 0 0 0.5rem #151515;
+  box-shadow: 0 0 0.15rem 0 #151515;
+}
+#help-contact-bg .help-contact-btn:hover {
+  border: 2px solid #90A955;
+  background-color: #90A955;
+  color: #f6f6f6;
+}
+
 @media all and (max-width: 480px) {
   .testimonial-index figure {
     width: 35%;
@@ -456,6 +557,9 @@ body .main {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
+  }
+  #help-contact-bg h3, #help-contact-bg p {
+    width: 95%;
   }
 }
 

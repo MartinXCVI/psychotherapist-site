@@ -22,6 +22,7 @@
 
 @mixin border2($bdColor) {
   border: 2px solid $bdColor;
+  border-left: 26px solid $bdColor;
   &:hover {
     background-color: $bdColor;
     color: #f6f6f6;

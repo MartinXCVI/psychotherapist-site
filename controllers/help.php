@@ -14,15 +14,24 @@
   <title>Psychotherapist</title>
 </head>
 <body>
-  <header class="header" id="index-header">
+  <header class="header" id="help-header">
     <?php
       include './views/navbar.php';
     ?>
-    <h1 class="hero-title">Welcome</h1>
+    <h1 class="hero-title">Seeking Help</h1>
   </header>
   <main id="index-main" class="main">
+    <?php
+      include './views/components/help/whyTherapy.php';
+      include './views/components/help/helpBg.php';
+      include './views/components/help/helpProblems.php';    
+      include './views/components/help/benefits.php';
+      include './views/components/help/helpContact.php';
+    ?>
   </main>
-
+  <?php
+    include './views/footer.php';
+  ?>
   <!--- Scripts --->
   <!---Bootstrap scripts --->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

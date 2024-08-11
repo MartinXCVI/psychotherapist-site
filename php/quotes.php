@@ -12,3 +12,6 @@
     ["There is always something left to love.", "Gabriel Garcia Marquez"],
     ["Challenges make life interesting, however overcoming them is what makes life meaningful.", "Mark Twain"],
   ];
+
+  $helpQuote = "Vitality shows not only in the ability to persist but in the ability to start over.";
+  $helpAuthor = "—F. Scott Fitzgerald";
