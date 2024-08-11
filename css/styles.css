@@ -5,7 +5,7 @@
 
 html body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1, h2 {
@@ -44,6 +44,18 @@ p {
 
 .nav-item {
   padding-inline: 0.75rem;
+}
+
+#navigation .container-fluid {
+  justify-content: right;
+}
+
+.navbar-nav .nav-link.active {
+  color: #4F772D !important;
+}
+
+.footbar .nav-link.active {
+  color: #151515 !important;
 }
 
 .index-title {
@@ -324,6 +336,18 @@ body .main {
   font-style: italic;
 }
 
+.dev-signing {
+  color: #f4f4f4;
+}
+
+.dev-link {
+  color: #b6bd6e;
+  transition: 0.3s linear all;
+}
+.dev-link:hover {
+  color: #ECF39E;
+}
+
 @media all and (max-width: 480px) {
   .testimonial-index figure {
     width: 35%;
@@ -335,6 +359,27 @@ body .main {
 @media all and (max-width: 767px) {
   .blockquote p {
     width: 90%;
+  }
+  .list-group .list-group-item {
+    min-width: 18rem;
+  }
+}
+@media all and (max-width: 992px) {
+  #navbarNav .navbar-nav {
+    position: relative;
+    margin-top: 0.75rem;
+  }
+  #navbarNav .navbar-nav::before {
+    content: "";
+    inset: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    position: absolute;
+    background: #151515;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
   }
 }
 
