@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php 
+    include './php/variables.php';
+  ?>
 <head>
   <meta charset="UTF-8">
   <!--- Google fonts {font-family: "Prata", system-ui;} {font-family: "Poppins", sans-serif;} --->
@@ -11,18 +14,27 @@
   <link rel="stylesheet" href="../css/styles.css">
   <!--- Bootstrap CSS --->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Psychotherapist</title>
+  <title><?= $aboutTitle ?></title>
 </head>
 <body>
-  <header class="header" id="index-header">
+  <header class="header" id="about-header">
     <?php
       include './views/navbar.php';
     ?>
-    <h1 class="hero-title">Welcome</h1>
+    <h1 class="hero-title"><?= $aboutIntro ?></h1>
   </header>
   <main id="index-main" class="main">
+    <?php
+      include './views/components/about/aboutIntro.php';
+      include './views/components/about/aboutApproach.php';
+      include './views/components/about/aboutCareer.php';
+      include './views/components/about/aboutMotivation.php';
+      include './views/components/about/aboutContact.php';
+    ?>
   </main>
-
+  <?php
+    include './views/footer.php';
+  ?>
   <!--- Scripts --->
   <!---Bootstrap scripts --->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

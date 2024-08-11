@@ -17,8 +17,11 @@ a {
 }
 
 .hero-title {
+  width: 100%;
+  text-align: center;
   font-size: 4.75rem;
   color: #f6f6f6;
+  text-shadow: 0 0 0.5rem #252525;
 }
 
 p {
@@ -46,6 +49,16 @@ p {
   padding-inline: 0.75rem;
 }
 
+@media all and (max-width: 767px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+@media all and (max-width: 1280px) {
+  p {
+    font-size: 1rem;
+  }
+}
 #navigation .container-fluid {
   justify-content: right;
 }
@@ -62,20 +75,20 @@ p {
   color: #4F772D;
 }
 
-#index-header {
+#index-header, #about-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
 }
 
-#index-header h1 {
+.header .hero-title {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-#index-header::before {
+#index-header::before, #about-header::before {
   content: "";
   inset: 0;
   position: absolute;
@@ -89,6 +102,18 @@ p {
 
 #index-header::after {
   background-image: url("../assets/images/index-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#about-header::after {
+  background-image: url("../assets/images/about-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,6 +373,51 @@ body .main {
   color: #ECF39E;
 }
 
+#about-intro-line {
+  width: 85%;
+  border-top: 4px solid #aaaaaa;
+}
+
+#career-section {
+  background-color: #f4f4f4;
+}
+
+.about-contact-bg {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.about-contact-bg::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../assets/images/about-contact-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.about-contact-div h2 {
+  color: #f4f4f4;
+  text-shadow: 0 0 0.5rem #303030;
+}
+
+.about-contact-btn-div .about-contact-btn {
+  min-width: 14rem;
+  border: 3px solid #4F772D;
+  border-radius: 3rem;
+  color: #252525;
+  transition: 0.3s linear all;
+}
+.about-contact-btn-div .about-contact-btn:hover {
+  border: 3px solid #4F772D;
+  color: #f6f6f6;
+  background-color: #4F772D;
+}
+
 @media all and (max-width: 480px) {
   .testimonial-index figure {
     width: 35%;
@@ -362,6 +432,12 @@ body .main {
   }
   .list-group .list-group-item {
     min-width: 18rem;
+  }
+  .about-contact-bg::after {
+    background-image: url("../assets/images/about-contact-bg-mobile.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media all and (max-width: 992px) {

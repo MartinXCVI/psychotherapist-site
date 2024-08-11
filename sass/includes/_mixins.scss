@@ -6,6 +6,13 @@
   background-size: cover;
 }
 
+@mixin bgTop($bgImg) {
+  background-image: url($bgImg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @mixin bgColor($bgColor) {
   background: $bgColor;
   background-position: center;

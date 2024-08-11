@@ -22,8 +22,11 @@ a {
 }
 
 .hero-title {
+  width: 100%;
+  text-align: center;
   font-size: 4.75rem;
   color: color.$white;
+  text-shadow: 0 0 0.5rem color.$softBlack;
 }
 
 p {
@@ -49,4 +52,16 @@ p {
 
 .nav-item {
   padding-inline: 0.75rem;
+}
+
+@media all and (max-width: 767px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  p {
+    font-size: 1rem;
+  }
 }

@@ -1,6 +1,10 @@
 <?php
 
 $indexIntro = "Welcome";
+$aboutIntro = "About Me";
+
+$siteTitle = "Psychotherapist Site";
+$aboutTitle = "Psychotherapist: About Me";
 
 $myName = "Clara Winslow";
 $myProf = "Psychotherapist";
@@ -15,6 +19,6 @@ $lorem = [
   "lorem30" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia veritatis animi labore quibusdam. Cupiditate porro minima id culpa vel dignissimos, ex sequi commodi illum? Lorem ipsum dolor sit amet"
 ];
 
-$siteTitle = "Psychotherapist Site";
+
 
 $testimonials = ['Sophia Gallac'];
