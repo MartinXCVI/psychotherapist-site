@@ -21,7 +21,7 @@
   color: color.$green;
 }
 
-#index-header, #about-header, #help-header, #testimonials-header {
+#index-header, #about-header, #help-header, #testimonials-header, #contact-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -35,7 +35,7 @@
 }
 
 
-#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before {
+#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before, #contact-header::before {
   content: '';
   inset: 0;
   position: absolute;
@@ -73,6 +73,15 @@
 
 #testimonials-header::after {
   @include mx.bgCenter('../assets/images/testimonials-hero.jpg');
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact-header::after {
+  @include mx.bgCenter('../assets/images/contact-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -430,6 +439,31 @@ body .main {
   text-shadow: 0 0 0.25rem color.$black;
 }
 
+#faq-wrapper {
+  min-height: 100vh;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: color.$softGreen !important;
+  color: color.$white !important;
+}
+
+#form-wrapper {
+  min-height: 100vh;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#floatingTextarea2 {
+  resize: none;
+}
+
+#textarea-label {
+  margin-left: 0.5rem;
+}
 
 @media all and (max-width: 480px) {
  

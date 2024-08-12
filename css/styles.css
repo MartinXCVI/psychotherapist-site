@@ -82,7 +82,7 @@ p {
   color: #4F772D;
 }
 
-#index-header, #about-header, #help-header, #testimonials-header {
+#index-header, #about-header, #help-header, #testimonials-header, #contact-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -95,7 +95,7 @@ p {
   transform: translateX(-50%);
 }
 
-#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before {
+#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before, #contact-header::before {
   content: "";
   inset: 0;
   position: absolute;
@@ -145,6 +145,18 @@ p {
 
 #testimonials-header::after {
   background-image: url("../assets/images/testimonials-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact-header::after {
+  background-image: url("../assets/images/contact-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,6 +595,32 @@ body .main {
   font-style: italic;
   color: #f6f6f6;
   text-shadow: 0 0 0.25rem #151515;
+}
+
+#faq-wrapper {
+  min-height: 100vh;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #90A955 !important;
+  color: #f6f6f6 !important;
+}
+
+#form-wrapper {
+  min-height: 100vh;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#floatingTextarea2 {
+  resize: none;
+}
+
+#textarea-label {
+  margin-left: 0.5rem;
 }
 
 @media all and (max-width: 480px) {

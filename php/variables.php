@@ -16,7 +16,7 @@ $lorem = [
   "lorem15" => "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, repellendus? Incidunt quod vitae deserunt consequuntur.",
   "lorem20" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo labore itaque cupiditate repellat pariatur maxime iure corrupti! Officia, at vel.",
   "lorem25" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia veritatis animi labore quibusdam. Cupiditate porro minima id culpa vel dignissimos, ex sequi commodi illum?",
-  "lorem30" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia veritatis animi labore quibusdam. Cupiditate porro minima id culpa vel dignissimos, ex sequi commodi illum? Lorem ipsum dolor sit amet"
+  "lorem30" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia veritatis animi labore quibusdam. Cupiditate porro minima id culpa vel dignissimos, ex sequi commodi illum? Lorem ipsum dolor sit amet."
 ];
 
 $testimonials = ['Sophia Gallac'];
