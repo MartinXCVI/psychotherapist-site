@@ -21,7 +21,7 @@
   color: color.$green;
 }
 
-#index-header, #about-header, #help-header {
+#index-header, #about-header, #help-header, #testimonials-header {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -35,7 +35,7 @@
 }
 
 
-#index-header::before, #about-header::before, #help-header::before {
+#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before {
   content: '';
   inset: 0;
   position: absolute;
@@ -64,6 +64,15 @@
 
 #help-header::after {
   @include mx.bgCenter('../assets/images/help-hero.jpg');
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#testimonials-header::after {
+  @include mx.bgCenter('../assets/images/testimonials-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -377,6 +386,50 @@ body .main {
   } 
 }
 
+#testimonials-wrapper {
+  min-height: 100vh;
+}
+
+#testimonials-contact-bg {
+  min-height: 100vh;
+  position: relative;
+  &::after {
+    content: '';
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    @include mx.bgCenter('../assets/images/testimonials-bg-contact.jpg');
+    opacity: 0.8;
+  }
+}
+
+#testimonials-contact-bg .testimonials-contact-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  color: color.$white;
+  border: 2px solid color.$white;
+  text-shadow: 0 0 0.5rem color.$black;
+  box-shadow: 0 0 0.15rem 0 color.$black;
+  &:hover {
+  border: 2px solid color.$softGreen;
+  background-color: color.$softGreen;
+  color: color.$white;
+  }
+}
+
+#testimonials-contact-bg .testimonials-quote {
+  font-size: 1.75rem;
+  color: color.$white;
+  text-shadow: 0 0 0.25rem color.$black;
+}
+
+#testimonials-contact-bg .testimonials-author {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: color.$white;
+  text-shadow: 0 0 0.25rem color.$black;
+}
+
 
 @media all and (max-width: 480px) {
  
@@ -426,5 +479,28 @@ body .main {
 
   #help-contact-bg h3, #help-contact-bg p {
     width: 95%;
+  }
+}
+
+#second-rev {
+  background-color: color.$whiteSmoke;
+}
+
+.rev-name {
+  font-weight: 500;
+}
+
+.rev-job {
+  color: color.$darkGray;
+}
+
+@media all and (max-width: 1199px) {
+
+  #first-rev, #third-rev {
+    flex-direction: column-reverse;
+  }
+
+  #second-rev {
+    flex-direction: column;
   }
 }

@@ -45,6 +45,14 @@ p {
   background-color: unset !important;
 }
 
+#navigation #navigation-wrapper .navbar-toggler {
+  background-color: color.$green;
+
+  .navbar-toggler-icon {
+    color: color.$white !important;
+  }
+}
+
 .nav-item .nav-link {
   color: color.$whiteSmoke;
   font-size: 1.25rem;

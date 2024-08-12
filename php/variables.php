@@ -44,3 +44,8 @@ $benefits2 = [
   "<strong>Mental clarity</strong>: Gain a better understanding of your mind and emotions.",
   "<strong>Greater life satisfaction</strong>: Achieve a more fulfilling and balanced life."
 ];
+
+$testimonialsQuote = [
+  "The two most important days in your life are the day you are born and the day you find out why.",
+  "Mark Twain"
+];
