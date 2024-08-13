@@ -1,5 +1,6 @@
 <?php
   require "./php/variables.php";
+  require "./php/myInfo.php";
 ?>
 
 <h2 class="w-100 text-center mt-4">Virtually or In-Person</h2>
@@ -9,19 +10,19 @@
     <ul class="contact-info-list">
       <li>
         <small><i class="fa-solid fa-envelope"></i> Email</small><br>
-        <p>myemailaddress@something.com</p>
+        <p><?= $myInfo -> myEmail ?></p>
       </li>
       <li>
         <small><i class="fa-solid fa-phone"></i> Phone</small><br>
-        <p>123 - 456 - 7890</p>
+        <p><?= $myInfo -> myPhone ?></p>
       </li>
       <li>
         <small><i class="fa-solid fa-globe"></i> Online Treating</small><br>
-        <p>Via Zoom, Skype or Meet</p>
+        <p><?= $myInfo -> onlineTreating ?></p>
       </li>
       <li>
         <small><i class="fa-solid fa-couch"></i> In Person</small><br>
-        <p>My Office Name<br> Street Name, N°<br>City, State</p>
+        <p><?= $myInfo -> officeAddress ?></p>
       </li>
     </ul>
   </div>

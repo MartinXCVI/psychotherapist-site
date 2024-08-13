@@ -17,10 +17,10 @@
       <img src="../../../assets/images/rev-img-3.jpg" class="figure-img img-fluid rounded" alt="...">
       <figcaption class="text-center">
         <span class="rev-name">
-          <?php echo $thirdReview -> revName ?>
+          <?= $thirdReview -> revName ?>
         </span> <br>
         <span class="rev-job">
-          <?php echo $thirdReview -> revJob ?>
+          <?= $thirdReview -> revJob ?>
         </span>
       </figcaption>
     </figure>
