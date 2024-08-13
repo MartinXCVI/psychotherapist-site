@@ -18,9 +18,9 @@
 </head>
 <body>
   <main class="w-100 d-flex flex-column justify-content-center align-items-center" id="error-main">
-    <h1 class="mb-3 col-11 text-center">Oops! Something went wrong...</h1>
-    <h2 class="mb-5 col-11 text-center">Or the resource that you're looking for doesn't exist.</h2>
-    <a href="/" class="error-btn btn">Go Back to Site</a>
+    <h1 class="mb-3 col-11 text-center"><?= $errorIntro ?></h1>
+    <h2 class="mb-5 col-11 text-center"><?= $errorText ?></h2>
+    <?= $backToSiteBtn ?>
   </main>
 </body>
 </html>

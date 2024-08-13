@@ -2,11 +2,21 @@
 
 $indexIntro = "Welcome";
 $aboutIntro = "About Me";
+$helpIntro = "Seeking Help";
+$testimonialsIntro = "Healing Testimonials";
+$contactIntro = "Contact Me";
 
 $siteTitle = "Psychotherapist Site";
 $aboutTitle = "Psychotherapist: About Me";
+$helpTitle = "Psychotherapist: Seeking Help";
+$testimonialsTitle = "Psychotherapist: Testimonials";
+$contactTitle = "Psychotherapist: Contact Me";
 
 $errorTitle = "Psychotherapist: 404 - Not Found";
+$errorIntro = "Oops! Something went wrong...";
+$errorText = "Or the resource that you're looking for doesn't exist.";
+
+$backToSiteBtn = "<a href='/' class='error-btn btn'>Go Back to Site</a>";
 
 $myName = "Clara Winslow";
 $myProf = "Psychotherapist";

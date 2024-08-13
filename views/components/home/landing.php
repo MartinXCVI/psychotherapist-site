@@ -3,13 +3,13 @@
 ?>
 
 <div class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4 py-xl-5">
-  <div class="col-sm-10 col-lg-7 col-xl-6">
+  <div class="col-sm-10 col-md-7 col-lg-6 col-xl-6">
     <figure class="figure">
       <img src="../../../assets/images/profile.jpg" class="figure-img img-fluid rounded" alt="...">
       <figcaption class="figure-caption text-center fs-5">Certified <?= $myProf ?><br> Life Coach</figcaption>
     </figure>
   </div>
-  <div class="intro-article col-sm-10 col-lg-7 col-xl-6">
+  <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-6">
     <p class="my-0">Be more than welcome</p>
     <h2 class="my-5 mt-2">My name is <?= $myName ?>, and I am a Certified <?= $fullProf ?>.</h2>
     <p><?= $lorem["lorem15"] ?></p>

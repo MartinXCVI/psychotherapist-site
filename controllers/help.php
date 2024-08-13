@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php
+    require "./php/variables.php";
+  ?>
 <head>
   <meta charset="UTF-8">
   <!--- Google fonts {font-family: "Prata", system-ui;} {font-family: "Poppins", sans-serif;} --->
@@ -11,14 +14,14 @@
   <link rel="stylesheet" href="../css/styles.css">
   <!--- Bootstrap CSS --->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Psychotherapist</title>
+  <title><?= $helpTitle ?></title>
 </head>
 <body>
   <header class="header" id="help-header">
     <?php
       include './views/navbar.php';
     ?>
-    <h1 class="hero-title">Seeking Help</h1>
+    <h1 class="hero-title"><?= $helpIntro ?></h1>
   </header>
   <main id="index-main" class="main">
     <?php
