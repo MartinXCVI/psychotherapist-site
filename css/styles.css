@@ -82,7 +82,7 @@ p {
   color: #4F772D;
 }
 
-#index-header, #about-header, #help-header, #testimonials-header, #contact-header {
+#index-header, #about-header, #help-header, #testimonials-header, #contact-header, #error-main {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -95,7 +95,7 @@ p {
   transform: translateX(-50%);
 }
 
-#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before, #contact-header::before {
+#index-header::before, #about-header::before, #help-header::before, #testimonials-header::before, #contact-header::before, #error-main::before {
   content: "";
   inset: 0;
   position: absolute;
@@ -157,6 +157,18 @@ p {
 
 #contact-header::after {
   background-image: url("../assets/images/contact-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#error-main::after {
+  background-image: url("../assets/images/error-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -623,6 +635,27 @@ body .main {
   margin-left: 0.5rem;
 }
 
+#error-main {
+  color: #f6f6f6;
+}
+#error-main h1, #error-main h2 {
+  text-shadow: 0 0 0.25rem #252525;
+}
+
+#error-main .error-btn {
+  padding: 0.5rem 3rem;
+  border-radius: 3rem;
+  color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  font-size: 1.25rem;
+  text-shadow: 0 0 1rem #151515;
+}
+#error-main .error-btn:hover {
+  border: 2px solid #4F772D;
+  background-color: #4F772D;
+  color: #f6f6f6;
+}
+
 @media all and (max-width: 480px) {
   .testimonial-index figure {
     width: 35%;
@@ -645,7 +678,7 @@ body .main {
     background-size: cover;
   }
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
   #navbarNav .navbar-nav {
     position: relative;
     margin-top: 0.75rem;

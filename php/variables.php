@@ -6,6 +6,8 @@ $aboutIntro = "About Me";
 $siteTitle = "Psychotherapist Site";
 $aboutTitle = "Psychotherapist: About Me";
 
+$errorTitle = "Psychotherapist: 404 - Not Found";
+
 $myName = "Clara Winslow";
 $myProf = "Psychotherapist";
 $fullProf = "Psychotherapist & Life Coach";
