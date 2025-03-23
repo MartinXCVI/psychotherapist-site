@@ -1,0 +1,28 @@
+---
+// Layouts and components
+import Layout from '@layouts/Layout.astro';
+
+import Navbar from '@components/Navbar.astro';
+import WhyTherapy from '@components/Help/WhyTherapy.astro';
+import HelpBg from '@components/Help/HelpBg.astro';
+import HelpProblems from '@components/Help/HelpProblems.astro';
+import Benefits from '@components/Help/Benefits.astro';
+import HelpContact from '@components/Help/HelpContact.astro';
+import Footer from '@components/Footer.astro';
+
+---
+
+<Layout title="Psychotherapist: Seeking Help">
+  <header class="header" id="help-header">
+    <Navbar />
+    <h1 class="hero-title">Seeking Help</h1>
+  </header>
+  <main id="index-main" class="main">
+    <WhyTherapy />
+    <HelpBg />
+    <HelpProblems />
+    <Benefits />
+    <HelpContact />
+  </main>
+  <Footer />
+</Layout>

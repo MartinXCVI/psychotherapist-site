@@ -1,0 +1,31 @@
+---
+import ProblemItem from "@components/ProblemItem.astro"
+
+const title: string = "Do any of these sound familiar to you?"
+---
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5">
+  <h2 class="mb-5 text-center">{title}</h2>
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+      <ProblemItem route="/contact" className="anxiety" name="Anxiety" />
+      <ProblemItem route="/contact" className="depression" name="Depression" />
+      <ProblemItem route="/contact" className="trauma" name="Trauma" />
+    </ul>
+    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+      <ProblemItem route="/contact" className="grief" name="Grief" />
+      <ProblemItem route="/contact" className="stress" name="Stress" />
+      <ProblemItem route="/contact" className="addiction" name="Addiction" />
+    </ul>
+    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+      <ProblemItem route="/contact" className="phobias" name="Phobias" />
+      <ProblemItem route="/contact" className="burnout" name="Burnout" />
+      <ProblemItem route="/contact" className="insomnia" name="Insomnia" />
+    </ul>
+    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+      <ProblemItem route="/contact" className="loneliness" name="Loneliness" />
+      <ProblemItem route="/contact" className="anger" name="Anger" />
+      <ProblemItem route="/contact" className="guilt" name="Guilt" />
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+---
+const contactFormIntro: string = "Get Your Free Consultation By Completing And Submitting This Form"
+const ACCESS_KEY: string = import.meta.env.WEB3_FORMS_API_KEY
+
+if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
+---
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5" id="form-wrapper">
+  <h2 class="col-11 col-lg-7 col-xl-8 text-center mb-5 lh-base">
+    {contactFormIntro}
+  </h2>
+  <form class="row g-3 col-12 col-lg-11" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value={ACCESS_KEY}>
+    <input type="hidden" name="redirect" value="/">
+    <input type="hidden" name="subject" value="Contact Email">
+    <input type="hidden" name="from_name" value="Psychotherapist Astro Site">
+    <input type="checkbox" name="botcheck" id="" style="display: none;">
+    <!---- Full Name ---->
+    <div class="col-md-6">
+      <label for="inputName" class="form-label">Full Name</label>
+      <input
+        type="text"
+        name="fullname"
+        class="form-control"
+        id="inputName"
+        placeholder="Your name here"
+        required
+        aria-label="Full Name"
+      >
+    </div>
+    <!---- Email ---->
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        id="inputEmail4"
+        placeholder="Your email here"
+        required
+        aria-label="Email"
+      >
+    </div>
+    <!---- Phone ---->
+    <div class="col-md-6">
+      <label for="inputPhone" class="form-label">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        class="form-control"
+        id="inputPhone"
+        placeholder="Your phone here"
+        required
+        aria-label="Phone number"
+      >
+    </div>
+    <!---- Address ---->
+    <div class="col-md-6">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input
+        type="text"
+        name="address"
+        class="form-control"
+        id="inputAddress"
+        placeholder="Your address here"
+        required
+        aria-label="Address"
+      >
+    </div>
+    <!---- City ---->
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input
+        type="text"
+        name="city"
+        class="form-control"
+        id="inputCity"
+        placeholder="Your city here"
+        required
+        aria-label="City"
+      >
+    </div>
+    <!---- Date of Birth ---->
+    <div class="col-md-6">
+      <label for="inputDate" class="form-label">Date of Birth</label>
+      <input
+        type="date"
+        name="birthdate"
+        class="form-control"
+        id="inputDate"
+        required
+        aria-label="Date of Birth"
+      >
+    </div>
+    <!---- Message Textarea ---->
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        name="message"
+        placeholder="Leave a comment here"
+        id="floatingTextarea2"
+        style="height: 150px"
+        required
+        aria-label="Message"
+      ></textarea>
+      <label for="floatingTextarea2" id="textarea-label">Message</label>
+    </div>
+    <!---- * BUTTONS * ---->
+    <div class="col-12 d-flex flex-column flex-sm-row justify-content-center mt-4">
+      <button
+        type="submit"
+        class="btn btn-success mx-4 mb-3 mb-sm-0 px-5 py-2 rounded-pill"
+        aria-label="Submit Form"
+      >
+        Send
+      </button>
+      <button
+        type="reset"
+        class="btn btn-warning mx-4 px-5 py-2 rounded-pill"
+        aria-label="Reset Form"
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>

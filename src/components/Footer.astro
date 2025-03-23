@@ -1,0 +1,30 @@
+---
+import DevSignature from "./DevSignature.astro";
+
+const currentPath = Astro.url.pathname;
+const isActive = (path: string) => currentPath === path ? "nav-link active" : "nav-link";
+---
+
+<footer class="footer d-flex flex-wrap flex-column justify-content-center align-content-center py-5 py-lg-2 flex-lg-row justify-content-lg-between">
+  <nav class="navbar navbar-expand-lg" id="navigation">
+    <div class="container-fluid justify-content-center">
+      <div id="navbarNav w-100">
+        <ul class="navbar-nav footbar">
+          <li class="nav-item">
+            <a class={`text-center ${isActive("/")}`} href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class={`text-center ${isActive("/about")}`} href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class={`text-center ${isActive("/help")}`} href="/help">Seek Help</a>
+          </li>
+          <li class="nav-item">
+            <a class={`text-center ${isActive("/contact")}`} href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <DevSignature />
+</footer>

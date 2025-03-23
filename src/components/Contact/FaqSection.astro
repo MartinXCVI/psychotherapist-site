@@ -1,0 +1,72 @@
+---
+import { faq } from '../../data/faq'
+import type { IFaqItem } from '@interfaces/IFaqItem'
+
+const title: string = "Frequently Asked Questions"
+---
+
+<section class="container-fluid d-flex flex-column px-0 py-5" id="faq-wrapper">
+  <h2 class="w-100 col-12 text-center mt-5">{title}</h2>
+  <div class="container-fluid d-flex flex-column flex-lg-row py-5 px-lg-4">
+    <!--- FIRST FAQ DIV --->
+    <div class="container col-12 col-lg-6 mb-5 mb-lg-0">
+      <div class="accordion" id="accordionLeft">
+        <!-- Rendering the accordion items -->
+        {faq.slice(0, 3).map((item: IFaqItem, index: number) => (
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapseLeft${index}`}
+                aria-expanded={index === 0 ? "true" : "false"}
+                aria-controls={`collapseLeft${index}`}
+              >
+                {item.question}
+              </button>
+            </h2>
+            <div
+              id={`collapseLeft${index}`}
+              class={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
+              data-bs-parent="#accordionLeft"
+            >
+              <div class="accordion-body">{item.answer}</div>
+            </div>
+          </div>
+        ))}
+        <!-- End of the loop -->
+      </div>
+    </div>
+    <!--- SECOND FAQ DIV --->
+    <div class="container col-12 col-lg-6 mb-5 mb-lg-0">
+      <div class="accordion" id="accordionRight">
+        <!-- Rendering the accordion items -->
+        {faq.slice(3).map((item: IFaqItem, index: number) => (
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapseRight${index}`}
+                aria-expanded={index === 0 ? "true" : "false"}
+                aria-controls={`collapseRight${index}`}
+              >
+                {item.question}
+              </button>
+            </h2>
+            <div
+              id={`collapseRight${index}`}
+              class={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
+              data-bs-parent="#accordionRight"
+            >
+              <div class="accordion-body">{item.answer}</div>
+            </div>
+          </div>
+        ))}
+        <!-- End of the loop -->
+      </div>
+    </div>
+  </div>
+</section>

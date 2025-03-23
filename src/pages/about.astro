@@ -1,0 +1,28 @@
+---
+// Layouts and components
+import Layout from '@layouts/Layout.astro';
+
+import Navbar from '@components/Navbar.astro';
+import AboutIntro from '@components/About/AboutIntro.astro';
+import AboutApproach from '@components/About/AboutApproach.astro';
+import AboutCareer from '@components/About/AboutCareer.astro';
+import AboutMotivation from '@components/About/AboutMotivation.astro';
+import AboutContact from '@components/About/AboutContact.astro';
+import Footer from '@components/Footer.astro';
+
+---
+
+<Layout title="Psychotherapist: About Me">
+  <header class="header" id="about-header">
+    <Navbar />
+    <h1 class="hero-title">About Me</h1>
+  </header>
+  <main id="index-main" class="main">
+    <AboutIntro />
+    <AboutApproach />
+    <AboutCareer />
+    <AboutMotivation />
+    <AboutContact />
+  </main>
+  <Footer />
+</Layout>

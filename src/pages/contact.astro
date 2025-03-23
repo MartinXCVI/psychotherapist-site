@@ -1,0 +1,27 @@
+---
+// Layouts and components
+import Layout from '@layouts/Layout.astro';
+
+import Navbar from '@components/Navbar.astro';
+import ContactForm from '@components/Contact/ContactForm.astro';
+import FaqSection from '@components/Contact/FaqSection.astro';
+import ContactInfo from '@components/Contact/ContactInfo.astro';
+import GoogleMap from '@components/Contact/GoogleMap.astro';
+import Footer from '@components/Footer.astro';
+
+const contactIntro: string = "Contact Me"
+---
+
+<Layout title="Pyschotherapist: Contact">
+  <header class="header" id="contact-header">
+    <Navbar />
+    <h1 class="hero-title">{contactIntro}</h1>
+  </header>
+  <main id="index-main" class="main">
+    <ContactForm />
+    <FaqSection />
+    <ContactInfo />
+    <GoogleMap />
+  </main>
+  <Footer />
+</Layout>

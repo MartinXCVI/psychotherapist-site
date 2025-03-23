@@ -1,0 +1,24 @@
+---
+import type { IQuote } from '@interfaces/IQuote'
+
+const testimonialsQuote: IQuote = {
+  quote: "The two most important days in your life are the day you are born and the day you find out why.",
+  author: "Mark Twain"
+}
+
+const { quote, author } = testimonialsQuote
+---
+
+<div class="help-bg w-100 d-flex flex-column justify-content-center align-items-center" id="testimonials-contact-bg">
+  <p class="testimonials-quote col-10 col-lg-8 text-center pb-4">
+    <q>{quote}</q>
+  </p>
+  <p class="testimonials-author text-center pb-4">
+    —{author}</p>
+  <a
+    class="testimonials-contact-btn btn mb-3 mb-sm-0"
+    href="/contact"
+  >
+    Free Consultation
+  </a>
+</div>

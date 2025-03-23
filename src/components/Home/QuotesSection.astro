@@ -1,0 +1,14 @@
+---
+import { quotes } from "@data/quotes"
+import { renderQuoteCard } from '@helpers/renderQuoteCard'
+---
+
+<div id="carouselExampleSlidesOnly" class="carousel slide quotes-carousel carousel-fade mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {quotes.map((quoteData, index) => (
+      <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
+        <Fragment set:html={renderQuoteCard(quoteData[0], quoteData[1])} />
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,0 +1,26 @@
+---
+// Layouts and components
+import Layout from '@layouts/Layout.astro';
+
+import Navbar from '@components/Navbar.astro';
+import Landing from '@components/Home/Landing.astro';
+import Testimonial from '@components/Home/Testimonial.astro';
+import Problems from '@components/Home/Problems.astro';
+import QuotesSection from '@components/Home/QuotesSection.astro';
+import Footer from '@components/Footer.astro';
+
+---
+
+<Layout title="Psychotherapist: Welcome Home">
+	<header class="header" id="index-header">
+		<Navbar />
+    <h1 class="hero-title">Welcome</h1>
+  </header>
+	<main id="index-main" class="main">
+		<Landing />
+		<Testimonial />
+		<Problems />
+		<QuotesSection />
+	</main>
+	<Footer />
+</Layout>

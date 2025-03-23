@@ -1,0 +1,23 @@
+---
+// Layouts and components
+import Layout from '@layouts/Layout.astro';
+
+import Navbar from '@components/Navbar.astro';
+import TestimonialsWrapper from '@components/Testimonials/TestimonialsWrapper.astro';
+import ContactTestimonials from '@components/Testimonials/ContactTestimonials.astro';
+import Footer from '@components/Footer.astro';
+
+const testimonialsIntro = "Healing Testimonials"
+---
+
+<Layout title="Pyschotherapist: Testimonials">
+  <header class="header" id="testimonials-header">
+    <Navbar />
+    <h1 class="hero-title">{testimonialsIntro}</h1>
+  </header>
+  <main id="index-main" class="main">
+    <TestimonialsWrapper />
+    <ContactTestimonials />
+  </main>
+  <Footer />
+</Layout>

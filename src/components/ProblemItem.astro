@@ -1,0 +1,15 @@
+---
+interface Props {
+  className: string;
+  route: string;
+  name: string;
+}
+
+const { className, route, name } = Astro.props as Props
+---
+
+<li class="list-group-item mb-4 mb-md-0">
+  <a href={route} class={className}>
+    {name}
+  </a>
+</li>

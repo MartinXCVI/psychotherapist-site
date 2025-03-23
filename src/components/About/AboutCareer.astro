@@ -1,0 +1,29 @@
+---
+import { getEntry, render } from 'astro:content'
+import type { CollectionEntry } from 'astro:content'
+
+const aboutLanding: CollectionEntry<"about"> | undefined = await getEntry("about", "career")
+if (!aboutLanding) {
+  throw new Error('Could not find about\'s "career" text')
+}
+
+const { Content } = await render(aboutLanding)
+
+const title: string = "My Professional Career"
+---
+
+<div class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4" id="career-section">
+  <div class="col-sm-10 col-md-7 col-lg-6 col-xl-4">
+    <figure class="figure">
+      <img
+        src="src/assets/images/about-img-2.jpg"
+        class="figure-img img-fluid rounded"
+        alt="..."
+      >
+    </figure>
+  </div>
+  <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-8">
+    <h2 class="my-5 mt-2">{title}</h2>
+    <Content />
+  </div>
+</div>
