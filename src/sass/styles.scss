@@ -46,7 +46,7 @@
 }
 
 #index-header::after {
-  @include mx.bgCenter('../assets/images/index-hero.jpg');
+  @include mx.bgCenter('/images/index-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -55,7 +55,7 @@
 }
 
 #about-header::after {
-  @include mx.bgCenter('../assets/images/about-hero.jpg');
+  @include mx.bgCenter('/images/about-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -64,7 +64,7 @@
 }
 
 #help-header::after {
-  @include mx.bgCenter('../assets/images/help-hero.jpg');
+  @include mx.bgCenter('/images/help-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -73,7 +73,7 @@
 }
 
 #testimonials-header::after {
-  @include mx.bgCenter('../assets/images/testimonials-hero.jpg');
+  @include mx.bgCenter('/images/testimonials-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -82,7 +82,7 @@
 }
 
 #contact-header::after {
-  @include mx.bgCenter('../assets/images/contact-hero.jpg');
+  @include mx.bgCenter('/images/contact-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -91,7 +91,7 @@
 }
 
 #error-main::after {
-  @include mx.bgCenter('../assets/images/error-hero.jpg');
+  @include mx.bgCenter('/images/error-hero.jpg');
   content: '';
   inset: 0;
   position: absolute;
@@ -245,7 +245,7 @@ body .main {
   inset: 0;
   z-index: -5;
   position: absolute;
-  @include mx.bgCenter('../assets/images/quotes-bg.jpg');
+  @include mx.bgCenter('/images/quotes-bg.jpg');
   opacity: 1;
 }
 
@@ -309,7 +309,7 @@ body .main {
   inset: 0;
   position: absolute;
   z-index: -1;
-  @include mx.bgTop('../assets/images/about-contact-bg.jpg');
+  @include mx.bgTop('/images/about-contact-bg.jpg');
   opacity: 0.8;
 }
 
@@ -341,7 +341,7 @@ body .main {
     inset: 0;
     z-index: -1;
     position: absolute;
-    @include mx.bgCenter('../assets/images/help-bg.jpg');
+    @include mx.bgCenter('/images/help-bg.jpg');
     background-attachment: fixed;
     opacity: 0.9;
   }
@@ -375,7 +375,7 @@ body .main {
     inset: 0;
     z-index: -1;
     position: absolute;
-    @include mx.bgCenter('../assets/images/help-bg-contact.jpg');
+    @include mx.bgCenter('/images/help-bg-contact.jpg');
     opacity: 0.8;
   }
 
@@ -420,7 +420,7 @@ body .main {
     inset: 0;
     z-index: -1;
     position: absolute;
-    @include mx.bgCenter('../assets/images/testimonials-bg-contact.jpg');
+    @include mx.bgCenter('/images/testimonials-bg-contact.jpg');
     opacity: 0.8;
   }
 }
@@ -526,7 +526,7 @@ body .main {
   }
 
   .about-contact-bg::after {
-    @include mx.bgTop('../assets/images/about-contact-bg-mobile.jpg');
+    @include mx.bgTop('/images/about-contact-bg-mobile.jpg');
   }
 }
 
