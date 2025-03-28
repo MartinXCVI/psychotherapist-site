@@ -5,11 +5,20 @@ import type { IFaqItem } from '@interfaces/IFaqItem'
 const title: string = "Frequently Asked Questions"
 ---
 
-<section class="container-fluid d-flex flex-column px-0 py-5" id="faq-wrapper">
-  <h2 class="w-100 col-12 text-center mt-5">{title}</h2>
+<section
+  class="container-fluid d-flex flex-column px-0 py-5"
+  id="faq-wrapper"
+  aria-labelledby="faq-section-title"
+>
+  <h2 class="w-100 col-12 text-center mt-5" id="faq-section-title">
+    {title}
+  </h2>
   <div class="container-fluid d-flex flex-column flex-lg-row py-5 px-lg-4">
     <!--- FIRST FAQ DIV --->
-    <div class="container col-12 col-lg-6 mb-5 mb-lg-0">
+    <article
+      class="container col-12 col-lg-6 mb-5 mb-lg-0"
+      aria-label="First accordion of frequent asked questions"
+    >
       <div class="accordion" id="accordionLeft">
         <!-- Rendering the accordion items -->
         {faq.slice(0, 3).map((item: IFaqItem, index: number) => (
@@ -37,9 +46,12 @@ const title: string = "Frequently Asked Questions"
         ))}
         <!-- End of the loop -->
       </div>
-    </div>
+    </article>
     <!--- SECOND FAQ DIV --->
-    <div class="container col-12 col-lg-6 mb-5 mb-lg-0">
+    <article
+      class="container col-12 col-lg-6 mb-5 mb-lg-0"
+      aria-label="Second accordion of frequent asked questions"
+    >
       <div class="accordion" id="accordionRight">
         <!-- Rendering the accordion items -->
         {faq.slice(3).map((item: IFaqItem, index: number) => (
@@ -67,6 +79,6 @@ const title: string = "Frequently Asked Questions"
         ))}
         <!-- End of the loop -->
       </div>
-    </div>
+    </article>
   </div>
 </section>

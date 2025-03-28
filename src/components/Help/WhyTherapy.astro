@@ -12,9 +12,14 @@ const { Content } = await render(helpLanding)
 const title: string = "Why Attending Therapy?"
 ---
 
-<div class="container-fluid col-sm-10 col-md-9 min-vh-100 d-flex flex-column justify-content-center py-5">
-  <h2 class="my-5 mt-2 text-center">{title}</h2>
+<section
+  class="container-fluid col-sm-10 col-md-9 min-vh-100 d-flex flex-column justify-content-center py-5"
+  aria-labelledby="why-therapy-title"
+>
+  <h2 class="my-5 mt-2 text-center" id="why-therapy-title">
+    {title}
+  </h2>
   <div class="container-fluid">
     <Content />
   </div>
-</div>
+</section>

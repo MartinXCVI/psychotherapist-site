@@ -17,6 +17,10 @@ h1, h2 {
   font-family: font.$titleFont;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -31,6 +35,7 @@ a {
 
 p {
   font-size: font.$paraSize;
+  text-wrap: pretty;
 }
 
 .container-fluid #navbarNav {

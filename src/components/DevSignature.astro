@@ -2,16 +2,23 @@
 import { getCurrentYear } from "@utils/getCurrentYear"
 ---
 
-<div class="dev-signature d-flex justify-content-center align-items-center me-lg-4">
+<section
+  class="dev-signature d-flex justify-content-center align-items-center me-lg-4"
+  aria-label="Developer signature small section"
+>
   <p class="dev-signing mb-0 text-center text-white">
     <a
       class="dev-link me-1"
       href="https://github.com/MartinXCVI/"
       target="_blank"
+      rel="noreferrer noopener"
+      title="Go to MartinXCVI's Github account"
+      aria-label="Go to MartinXCVI's Github account"
     >
-      MartinXCVI
+      MartinXCVI <i class="fa-brands fa-github" aria-hidden="true"></i>
     </a>
   </p>
-  <p class="mb-0">| &#169; {getCurrentYear()}
+  <p class="mb-0" aria-label={`Copyright ${getCurrentYear()}`}>
+    | &#169; {getCurrentYear()}
   </p>
-</div>
+</section>

@@ -2,11 +2,17 @@
 import { helpQuote, helpAuthor } from "@data/quotes";
 ---
 
-<div class="help-bg w-100 d-flex flex-column justify-content-center align-items-center" id="help-bg">
-  <p class="help-bg-quote px-3 text-center">
-    <q>{helpQuote}</q>
-  </p>
-  <p class="help-bg-author text-center">
-    {helpAuthor}
-  </p>
-</div>
+<section
+  class="help-bg w-100 d-flex flex-column justify-content-center align-items-center"
+  id="help-bg"
+  aria-label={`${helpAuthor}'s inspiring quote`}
+>
+  <blockquote class="w-100 d-flex flex-column justify-content-center align-items-center">
+    <p class="help-bg-quote px-3 mb-4 text-center">
+      <q>{helpQuote}</q>
+    </p>
+    <cite class="help-bg-author text-center">
+      {helpAuthor}
+    </cite>
+  </blockquote>
+</section>

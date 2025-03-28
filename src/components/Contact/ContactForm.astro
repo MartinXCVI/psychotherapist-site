@@ -1,15 +1,20 @@
 ---
 const contactFormIntro: string = "Get Your Free Consultation By Completing And Submitting This Form"
+const actionUrl: string = "https://api.web3forms.com/submit"
 const ACCESS_KEY: string = import.meta.env.WEB3_FORMS_API_KEY
 
 if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
 ---
 
-<div class="container-fluid d-flex flex-column justify-content-center align-items-center py-5" id="form-wrapper">
-  <h2 class="col-11 col-lg-7 col-xl-8 text-center mb-5 lh-base">
+<section
+  class="container-fluid d-flex flex-column justify-content-center align-items-center py-5"
+  id="form-wrapper"
+  aria-labelledby="contact-form-title"
+>
+  <h2 class="col-11 col-lg-7 col-xl-8 text-center mb-5 lh-base" id="contact-form-title">
     {contactFormIntro}
   </h2>
-  <form class="row g-3 col-12 col-lg-11" action="https://api.web3forms.com/submit" method="POST">
+  <form class="row g-3 col-12 col-lg-11" action={actionUrl} method="POST">
     <input type="hidden" name="access_key" value={ACCESS_KEY}>
     <input type="hidden" name="redirect" value="/">
     <input type="hidden" name="subject" value="Contact Email">
@@ -110,17 +115,17 @@ if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
       <button
         type="submit"
         class="btn btn-success mx-4 mb-3 mb-sm-0 px-5 py-2 rounded-pill"
-        aria-label="Submit Form"
+        aria-label="Submit form with consultation request"
       >
         Send
       </button>
       <button
         type="reset"
         class="btn btn-warning mx-4 px-5 py-2 rounded-pill"
-        aria-label="Reset Form"
+        aria-label="Clear all form fields"
       >
         Reset
       </button>
     </div>
   </form>
-</div>
+</section>

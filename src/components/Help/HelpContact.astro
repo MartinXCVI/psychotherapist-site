@@ -2,8 +2,14 @@
 const title: string = "Let Me Help You"
 ---
 
-<div class="help-bg w-100 d-flex flex-column justify-content-center align-items-center" id="help-contact-bg">
-  <h3 class="text-center pb-4">{title}</h3>
+<section
+  class="help-bg w-100 d-flex flex-column justify-content-center align-items-center"
+  id="help-contact-bg"
+  aria-labelledby="help-contact-title"
+>
+  <h3 class="text-center pb-4" id="help-contact-title">
+    {title}
+  </h3>
   <p class="text-center pb-4">
     Contacting me is the initial step.
   </p>
@@ -13,7 +19,9 @@ const title: string = "Let Me Help You"
   <a
     class="help-contact-btn btn mb-3 mb-sm-0"
     href="/contact"
+    title="Schedule a free consultation"
+    aria-label="Schedule a free consultation"
   >
     Free Consultation
   </a>
-</div>
+</section>

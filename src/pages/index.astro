@@ -9,12 +9,15 @@ import Problems from '@components/Home/Problems.astro';
 import QuotesSection from '@components/Home/QuotesSection.astro';
 import Footer from '@components/Footer.astro';
 
+const intro: string = "Welcome"
 ---
 
 <Layout title="Psychotherapist: Welcome Home">
-	<header class="header" id="index-header">
+	<header class="header" id="index-header" aria-labelledby="index-hero-title">
 		<Navbar />
-    <h1 class="hero-title">Welcome</h1>
+    <h1 class="hero-title" id="index-hero-title">
+			{intro}
+		</h1>
   </header>
 	<main id="index-main" class="main">
 		<Landing />

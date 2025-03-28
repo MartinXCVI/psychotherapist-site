@@ -9,7 +9,12 @@ const { className, route, name } = Astro.props as Props
 ---
 
 <li class="list-group-item mb-4 mb-md-0">
-  <a href={route} class={className}>
+  <a
+    href={route}
+    class={className}
+    title={`Schedule a consultation related to ${name}`}
+    aria-label={`Schedule a consultation related to ${name}`}
+  >
     {name}
   </a>
 </li>

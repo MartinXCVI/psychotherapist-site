@@ -7,13 +7,15 @@ import TestimonialsWrapper from '@components/Testimonials/TestimonialsWrapper.as
 import ContactTestimonials from '@components/Testimonials/ContactTestimonials.astro';
 import Footer from '@components/Footer.astro';
 
-const testimonialsIntro = "Healing Testimonials"
+const intro: string = "Healing Testimonials"
 ---
 
 <Layout title="Pyschotherapist: Testimonials">
-  <header class="header" id="testimonials-header">
+  <header class="header" id="testimonials-header" aria-labelledby="testimonials-hero-title">
     <Navbar />
-    <h1 class="hero-title">{testimonialsIntro}</h1>
+    <h1 class="hero-title" id="testimonials-hero-title">
+      {intro}
+    </h1>
   </header>
   <main id="index-main" class="main">
     <TestimonialsWrapper />

@@ -9,16 +9,25 @@ const testimonialsQuote: IQuote = {
 const { quote, author } = testimonialsQuote
 ---
 
-<div class="help-bg w-100 d-flex flex-column justify-content-center align-items-center" id="testimonials-contact-bg">
-  <p class="testimonials-quote col-10 col-lg-8 text-center pb-4">
-    <q>{quote}</q>
-  </p>
-  <p class="testimonials-author text-center pb-4">
-    —{author}</p>
+<section
+  class="help-bg w-100 d-flex flex-column justify-content-center align-items-center"
+  id="testimonials-contact-bg"
+  aria-label={`${author}'s inspiring quote section'`}
+>
+  <blockquote class="w-100 d-flex flex-column justify-content-center align-items-center">
+    <p class="testimonials-quote col-10 col-lg-8 text-center pb-4">
+      <q>{quote}</q>
+    </p>
+    <cite class="testimonials-author text-center pb-4">
+      —{author}
+    </cite>
+  </blockquote>
   <a
     class="testimonials-contact-btn btn mb-3 mb-sm-0"
     href="/contact"
+    title="Schedule a free consultation"
+    aria-label="Schedule a free consultation"
   >
     Free Consultation
   </a>
-</div>
+</section>

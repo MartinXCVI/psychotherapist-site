@@ -6,8 +6,14 @@ import ThirdReview from "./ThirdReview.astro"
 const title: string = "My Clients' Healing Experiences"
 ---
 
-<section class="py-5 d-flex flex-column align-items-center" id="testimonials-wrapper">
-  <h2 class="text-center">{title}</h2>
+<section
+  class="pt-5 pb-2 d-flex flex-column align-items-center"
+  id="testimonials-wrapper"
+  aria-labelledby="testimonials-wrapper-title"
+>
+  <h2 class="text-center" id="testimonials-wrapper-title">
+    {title}
+  </h2>
   <FirstReview />
   <SecondReview />
   <ThirdReview />

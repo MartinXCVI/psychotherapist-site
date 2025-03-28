@@ -6,9 +6,24 @@ const errorText: string = "Or the resource that you're looking for doesn't exist
 ---
 
 <Layout title="404 - Not Found">
-  <main class="w-100 d-flex flex-column justify-content-center align-items-center" id="error-main">
-    <h1 class="mb-3 col-11 text-center">{errorIntro}</h1>
-    <h2 class="mb-5 col-11 text-center">{errorText}</h2>
-    <a href='/' class='error-btn btn'>Go Back to Site</a>
+  <main
+    class="w-100 d-flex flex-column justify-content-center align-items-center"
+    id="error-main"
+    aria-labelledby="error-404-title"
+  >
+    <h1 class="mb-3 col-11 text-center" id="error-404-title">
+      {errorIntro}
+    </h1>
+    <h2 class="mb-5 col-11 text-center">
+      {errorText}
+    </h2>
+    <a
+      href='/'
+      class='error-btn btn'
+      title="Go to Home page"
+      aria-label="Go to Home page"
+    >
+      Go Back to Site
+    </a>
   </main>
 </Layout>

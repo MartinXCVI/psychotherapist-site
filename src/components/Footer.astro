@@ -9,18 +9,46 @@ const isActive = (path: string) => currentPath === path ? "nav-link active" : "n
   <nav class="navbar navbar-expand-lg" id="navigation">
     <div class="container-fluid justify-content-center">
       <div id="navbarNav w-100">
-        <ul class="navbar-nav footbar">
+        <ul class="navbar-nav footbar" aria-label="Navigation menu">
           <li class="nav-item">
-            <a class={`text-center ${isActive("/")}`} href="/">Home</a>
+            <a
+              class={`text-center ${isActive("/")}`}
+              href="/"
+              title="Go to Home page"
+              aria-label="Go to Home page"
+            >
+              Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class={`text-center ${isActive("/about")}`} href="/about">About</a>
+            <a
+              class={`text-center ${isActive("/about")}`}
+              href="/about"
+              title="Go to About page"
+              aria-label="Go to About page"
+            >
+              About
+            </a>
           </li>
           <li class="nav-item">
-            <a class={`text-center ${isActive("/help")}`} href="/help">Seek Help</a>
+            <a
+              class={`text-center ${isActive("/help")}`}
+              href="/help"
+              title="Go to Seek Help page"
+              aria-label="Go to Seek Help page"
+            >
+              Seek Help
+            </a>
           </li>
           <li class="nav-item">
-            <a class={`text-center ${isActive("/contact")}`} href="/contact">Contact</a>
+            <a
+              class={`text-center ${isActive("/contact")}`}
+              href="/contact"
+              title="Go to Contact page"
+              aria-label="Go to Contact page"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

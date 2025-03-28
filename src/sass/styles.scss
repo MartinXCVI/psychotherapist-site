@@ -313,9 +313,10 @@ body .main {
   opacity: 0.8;
 }
 
-.about-contact-div h2 {
+.about-contact-div p {
   color: color.$whiteSmoke;
   text-shadow: 0 0 0.5rem color.$softerBlack;
+  font-size: 2rem;
 }
 
 .about-contact-btn-div .about-contact-btn {
@@ -439,17 +440,18 @@ body .main {
   }
 }
 
-#testimonials-contact-bg .testimonials-quote {
-  font-size: 1.75rem;
-  color: color.$white;
-  text-shadow: 0 0 0.25rem color.$black;
-}
-
-#testimonials-contact-bg .testimonials-author {
-  font-size: 1.25rem;
-  font-style: italic;
-  color: color.$white;
-  text-shadow: 0 0 0.25rem color.$black;
+#testimonials-contact-bg blockquote {
+  .testimonials-quote {
+    font-size: 1.75rem;
+    color: color.$white;
+    text-shadow: 0 0 0.25rem color.$black;
+  }
+  .testimonials-author {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: color.$white;
+    text-shadow: 0 0 0.25rem color.$black;
+  }
 }
 
 #faq-wrapper {
@@ -505,12 +507,23 @@ body .main {
     font-size: 3.25rem;
   }
 
+  .about-contact-div p {
+    font-size: 1.25rem;
+  }
+
   .testimonial-index figure {
     width: 35%;
   }
 
   .testimonial-index .testimonial-index-text {
     width: 90%;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+ 
+  .about-contact-div p {
+    font-size: 1.75rem;
   }
 }
 

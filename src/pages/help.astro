@@ -10,12 +10,15 @@ import Benefits from '@components/Help/Benefits.astro';
 import HelpContact from '@components/Help/HelpContact.astro';
 import Footer from '@components/Footer.astro';
 
+const intro: string = "Seeking Help"
 ---
 
 <Layout title="Psychotherapist: Seeking Help">
-  <header class="header" id="help-header">
+  <header class="header" id="help-header" aria-labelledby="help-hero-title">
     <Navbar />
-    <h1 class="hero-title">Seeking Help</h1>
+    <h1 class="hero-title" id="help-hero-title">
+      {intro}
+    </h1>
   </header>
   <main id="index-main" class="main">
     <WhyTherapy />

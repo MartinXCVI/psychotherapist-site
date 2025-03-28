@@ -3,7 +3,12 @@ import { quotes } from "@data/quotes"
 import { renderQuoteCard } from '@helpers/renderQuoteCard'
 ---
 
-<div id="carouselExampleSlidesOnly" class="carousel slide quotes-carousel carousel-fade mb-5" data-bs-ride="carousel">
+<section
+  id="carouselExampleSlidesOnly"
+  class="carousel slide quotes-carousel carousel-fade"
+  data-bs-ride="carousel"
+  aria-label="Carousel of inspiring quotes"
+>
   <div class="carousel-inner">
     {quotes.map((quoteData, index) => (
       <div class={`carousel-item ${index === 0 ? 'active' : ''}`}>
@@ -11,4 +16,4 @@ import { renderQuoteCard } from '@helpers/renderQuoteCard'
       </div>
     ))}
   </div>
-</div>
+</section>

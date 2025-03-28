@@ -4,15 +4,21 @@ import { testimonials } from "@data/testimonials"
 const { sophiaGallac } = testimonials
 ---
 
-<div class="container-fluid testimonial-index d-flex flex-column justify-content-center justify-content-lg-evenly justify-content-xl-evenly align-items-center py-5">
+<section
+  class="container-fluid testimonial-index d-flex flex-column justify-content-center justify-content-lg-evenly justify-content-xl-evenly align-items-center py-5"
+  role="region"
+  aria-label="Testimonial section"
+>
   <!--- Picture --->
   <figure class="figure d-flex flex-column justify-content-center align-items-center mb-4 ">
     <img
       src="/images/test-img.png"
       class="figure-img img-fluid rounded"
-      alt="..."
+      alt={`${sophiaGallac.fullName} smiling happily`}
+      title={sophiaGallac.fullName}
+      aria-labelledby="client-caption"
     >
-    <figcaption class="figure-caption text-center">
+    <figcaption class="figure-caption text-center" id="client-caption">
       {sophiaGallac.fullName}
     </figcaption>
     <hr class="caption-underline">
@@ -26,7 +32,9 @@ const { sophiaGallac } = testimonials
   <a
     class="btn index-testimonial-btn"
     href="/testimonials"
+    title="Go to Testimonials page"
+    aria-label="Go to Testimonials page"
   >
     Clients' Testimonials
   </a>
-</div>
+</section>

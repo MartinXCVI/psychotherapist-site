@@ -13,7 +13,11 @@ import { reviews } from "src/data/reviews"
 const { thirdReviewer } = reviews
 ---
 
-<div class="container-fluid justify-content-center align-items-center row px-sm-2 py-4 p-xl-4" id="third-rev">
+<article
+  class="container-fluid justify-content-center align-items-center row px-sm-2 py-4 p-xl-4"
+  id="third-rev"
+  aria-label={`${thirdReviewer.fullName}'s testimonial`}
+>
   <div class="intro-article col-sm-10 col-md-8 col-lg-9 col-xl-8">
     <Content />
   </div>
@@ -22,9 +26,11 @@ const { thirdReviewer } = reviews
       <img
         src="/images/rev-img-3.jpg"
         class="figure-img img-fluid rounded"
-        alt="..."
+        alt={`${thirdReviewer.fullName} smiling`}
+        title={thirdReviewer.fullName}
+        aria-labelledby="third-reviewer-caption"
       >
-      <figcaption class="text-center">
+      <figcaption class="text-center" id="third-reviewer-caption">
         <span class="rev-name">
           {thirdReviewer.fullName}
         </span> <br>

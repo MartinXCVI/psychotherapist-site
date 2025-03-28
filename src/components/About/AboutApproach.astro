@@ -1,6 +1,7 @@
 ---
 import { getEntry, render } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
+import { myInfo } from '@data/myInfo'
 
 const aboutLanding: CollectionEntry<"about"> | undefined = await getEntry("about", "approach")
 if (!aboutLanding) {
@@ -8,13 +9,19 @@ if (!aboutLanding) {
 }
 
 const { Content } = await render(aboutLanding)
+const { fullName } = myInfo
 
 const title: string = "The Approach I Apply"
 ---
 
-<div class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4 ">
+<section
+  class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4"
+  aria-labelledby="about-approach-title"
+>
   <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-8">
-    <h2 class="my-5 mt-2">{title}</h2>
+    <h2 class="my-5 mt-2" id="about-approach-title">
+      {title}
+    </h2>
     <Content />
   </div>
   <div class="col-sm-10 col-md-7 col-lg-6 col-xl-4">
@@ -22,8 +29,9 @@ const title: string = "The Approach I Apply"
       <img
         src="/images/about-img-1.jpg"
         class="figure-img img-fluid rounded"
-        alt="..."
+        alt={`${fullName} listening to a patient`}
+        title={fullName}
       >
     </figure>
   </div>
-</div>
+</section>

@@ -11,16 +11,44 @@ const isActive = (path: string) => currentPath === path ? "nav-link active" : "n
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class={isActive("/")} href="/">Home</a>
+          <a
+            class={isActive("/")}
+            href="/"
+            title="Go to Home page"
+            aria-label="Go to Home page"
+          >
+            Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class={isActive("/about")} href="/about">About</a>
+          <a
+            class={isActive("/about")}
+            href="/about"
+            title="Go to About page"
+              aria-label="Go to About page"
+          >
+            About
+          </a>
         </li>
         <li class="nav-item">
-          <a class={isActive("/help")} href="/help">Seek Help</a>
+          <a
+            class={isActive("/help")}
+            href="/help"
+            title="Go to Seek Help page"
+            aria-label="Go to Seek Help page"
+          >
+            Seek Help
+          </a>
         </li>
         <li class="nav-item">
-          <a class={isActive("/contact")} href="/contact">Contact</a>
+          <a
+            class={isActive("/contact")}
+            href="/contact"
+            title="Go to Contact page"
+            aria-label="Go to Contact page"
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </div>

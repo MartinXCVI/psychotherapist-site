@@ -4,8 +4,14 @@ import ProblemItem from "@components/ProblemItem.astro"
 const title: string = "Main Issues I Can Help With"
 ---
 
-<div class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5">
-  <h2 class="mb-4 text-center">{title}</h2>
+<section
+  class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5"
+  role="region"
+  aria-labelledby="problems-title"
+>
+  <h2 class="mb-4 text-center" id="problems-title">
+    {title}
+  </h2>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
     <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
       <ProblemItem route="/help" className="anxiety" name="Anxiety" />
@@ -28,4 +34,4 @@ const title: string = "Main Issues I Can Help With"
       <ProblemItem route="/help" className="guilt" name="Guilt" />
     </ul>
   </div>
-</div>
+</section>
