@@ -10,7 +10,7 @@
     "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch"
   },
   "dependencies": {
-    "astro": "^5.5.3",
+    "astro": "^5.7.13",
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
