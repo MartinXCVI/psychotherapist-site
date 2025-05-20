@@ -143,16 +143,21 @@ body .main {
   width: 25%;
 }
 
+  .testimonial-index #client-caption {
+    font-size: 1.25rem;
+  }
+
 .caption-underline {
   width: 50%;
   border-top: 4px solid color.$gray;
+  margin-bottom: 0rem;
 }
 
 .testimonial-index .testimonial-index-text {
   width: 75%;
   
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -417,10 +422,18 @@ body .main {
 #testimonials-contact-bg {
   min-height: 100vh;
   position: relative;
-  &::after {
+  &::before {
     content: '';
     inset: 0;
     z-index: -1;
+    position: absolute;
+    @include mx.bgColor(color.$black);
+    opacity: 0.2;
+  }
+  &::after {
+    content: '';
+    inset: 0;
+    z-index: -2;
     position: absolute;
     @include mx.bgCenter('/images/testimonials-bg-contact.jpg');
     opacity: 0.8;
@@ -530,6 +543,10 @@ body .main {
 
 @media all and (max-width: 767px) {
 
+
+  .testimonial-index figure {
+    min-width: 75%;
+  }
 
   .blockquote p {
     width: 90%;
