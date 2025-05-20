@@ -14,12 +14,12 @@ const { fullName, myProf } = myInfo
 ---
 
 <section
-  class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4 py-xl-5"
+  class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4 py-xl-5 over-x"
   role="region"
   aria-labelledby="landing-title"
 >
   <div class="col-sm-10 col-md-7 col-lg-6 col-xl-6">
-    <figure class="figure">
+    <figure class="figure" data-aos="fade-up" data-aos-duration="1500">
       <img
         src="/images/profile.jpg"
         class="figure-img img-fluid rounded"
@@ -32,7 +32,11 @@ const { fullName, myProf } = myInfo
       </figcaption>
     </figure>
   </div>
-  <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-6">
+  <div
+    class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-6"
+    data-aos="fade-left"
+    data-aos-duration="1500"
+  >
     <p class="my-0">Be more than welcome</p>
     <h2 class="my-5 mt-2" id="landing-title">
       My name is {fullName}, and I am a Certified {myProf}.

@@ -10,10 +10,12 @@
     "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "astro": "^5.7.13",
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "sass": "^1.86.0"
   }
 }

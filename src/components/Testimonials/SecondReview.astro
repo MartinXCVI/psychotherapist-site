@@ -19,13 +19,15 @@ const { secondReviewer } = reviews
   aria-label={`${secondReviewer.fullName}'s testimonial`}
 >
   <div class="col-sm-10 col-md-8 col-lg-6 col-xl-3">
-    <figure class="figure">
+    <figure class="figure" data-aos="fade-right" data-aos-duration="1250">
       <img
         src="/images/rev-img-2.jpg"
         class="figure-img img-fluid rounded"
         alt={`${secondReviewer.fullName} smiling`}
         title={secondReviewer.fullName}
         aria-labelledby="second-reviewer-caption"
+        data-aos="flip-left"
+        data-aos-duration="1250"
       >
       <figcaption class="text-center" id="second-reviewer-caption">
         <span class="rev-name">
@@ -37,7 +39,11 @@ const { secondReviewer } = reviews
       </figcaption>
     </figure>
   </div>
-  <div class="intro-article col-sm-10 col-md-8 col-lg-9 col-xl-8">
+  <div
+    class="intro-article col-sm-10 col-md-8 col-lg-9 col-xl-8"
+    data-aos="fade-left"
+    data-aos-duration="1250"
+  >
     <Content />
   </div>
 </article>

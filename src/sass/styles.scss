@@ -2,6 +2,7 @@
 @use './includes/typography' as font;
 @use './includes/variables' as var;
 @use './includes/_mixins.scss' as mx;
+@use './includes/classes';
 
 @use './global.scss';
 
@@ -116,8 +117,8 @@ body .main {
   .contact-btn {
     border: 2px solid color.$darkGreen;
     color: color.$black;
-    // background-color: color.$darkGreen;
     &:hover {
+      border-color: color.$softGreen;
       background-color: color.$softGreen;
       color: color.$white;
     }
@@ -125,8 +126,8 @@ body .main {
   .about-btn {
     border: 2px solid color.$darkCream;
     color: color.$black;
-    // background-color: color.$darkCream;
     &:hover {
+      border-color: color.$cream;
       background-color: color.$cream;
       color: color.$black;
     }

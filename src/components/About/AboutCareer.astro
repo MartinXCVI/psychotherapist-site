@@ -15,11 +15,15 @@ const title: string = "My Professional Career"
 ---
 
 <section
-  class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4"
+  class="container-fluid justify-content-center row px-sm-2 py-4 p-xl-4 over-x"
   id="career-section"
   aria-labelledby="career-title"
 >
-  <div class="col-sm-10 col-md-7 col-lg-6 col-xl-4">
+  <div
+    class="col-sm-10 col-md-7 col-lg-6 col-xl-4"
+    data-aos="fade-up"
+    data-aos-duration="1250"
+  >
     <figure class="figure">
       <img
         src="/images/about-img-2.jpg"
@@ -29,7 +33,11 @@ const title: string = "My Professional Career"
       >
     </figure>
   </div>
-  <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-8">
+  <div
+    class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-8"
+    data-aos="fade-left"
+    data-aos-duration="1250"
+  >
     <h2 id="career-title" class="my-5 mt-2">{title}</h2>
     <Content />
   </div>

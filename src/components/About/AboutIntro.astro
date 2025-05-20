@@ -14,10 +14,14 @@ const { myProf, fullProf, fullName } = myInfo
 ---
 
 <section
-  class="container-fluid justify-content-center row pt-5 px-sm-2 mb-1 px-4 px-xl-4 px-xl-5"
+  class="container-fluid justify-content-center row pt-5 px-sm-2 mb-1 px-4 px-xl-4 px-xl-5 over-x"
   aria-labelledby="about-intro-title"
 >
-  <div class="col-sm-10 col-md-7 col-lg-6 col-xl-6">
+  <div
+    class="col-sm-10 col-md-7 col-lg-6 col-xl-6"
+    data-aos="fade-up"
+    data-aos-duration="1250"
+  >
     <figure class="figure">
       <img
         src="/images/profile-2.jpg"
@@ -31,7 +35,11 @@ const { myProf, fullProf, fullName } = myInfo
       </figcaption>
     </figure>
   </div>
-  <div class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-6">
+  <div
+    class="intro-article col-sm-10 col-md-9 col-lg-8 col-xl-6"
+    data-aos="fade-left"
+    data-aos-duration="1250"
+  >
     <h2 class="my-5 mt-2" id="about-intro-title">
       My name is {fullName}, and I am a Certified {fullProf}.
     </h2>

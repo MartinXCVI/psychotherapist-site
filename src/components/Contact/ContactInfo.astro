@@ -14,16 +14,26 @@ const { email, phone, onlineTreating, officeAddress } = myInfo
 const title: string = "Virtually or In-Person"
 ---
 
-<h2 class="w-100 text-center mt-4" id="contact-info-title">
+<h2
+  class="w-100 text-center mt-4"
+  id="contact-info-title"
+  data-aos="fade-down"
+  data-aos-duration="1500"
+>
   {title}
 </h2>
 <section
-  class="container-fluid d-flex flex-column flex-lg-row my-4"
+  class="container-fluid d-flex flex-column flex-lg-row my-4 over-x"
   aria-labelledby="contact-info-title"
 >
   <!--- First block --->
   <div class="container col-12 col-lg-6 px-lg-4 my-3">
-    <ul class="contact-info-list" aria-label="Contact details">
+    <ul
+      class="contact-info-list"
+      aria-label="Contact details"
+      data-aos="fade-right"
+      data-aos-duration="1250"
+    >
       <li>
         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
         Email
@@ -50,6 +60,8 @@ const title: string = "Virtually or In-Person"
   <article
     class="container col-12 col-lg-6 px-lg-4 my-3"
     aria-label="Additional contact information"
+    data-aos="fade-left"
+    data-aos-duration="1250"
   >
     <Content />
   </article>

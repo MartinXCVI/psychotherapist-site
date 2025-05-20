@@ -7,14 +7,23 @@ const errorText: string = "Or the resource that you're looking for doesn't exist
 
 <Layout title="404 - Not Found">
   <main
-    class="w-100 d-flex flex-column justify-content-center align-items-center"
+    class="w-100 d-flex flex-column justify-content-center align-items-center over-x"
     id="error-main"
     aria-labelledby="error-404-title"
   >
-    <h1 class="mb-3 col-11 text-center" id="error-404-title">
+    <h1
+      class="mb-3 col-11 text-center"
+      id="error-404-title"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       {errorIntro}
     </h1>
-    <h2 class="mb-5 col-11 text-center">
+    <h2
+      class="mb-5 col-11 text-center"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+    >
       {errorText}
     </h2>
     <a

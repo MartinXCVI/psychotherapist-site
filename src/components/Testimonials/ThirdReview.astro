@@ -14,21 +14,27 @@ const { thirdReviewer } = reviews
 ---
 
 <article
-  class="container-fluid justify-content-center align-items-center row px-sm-2 py-4 p-xl-4"
+  class="container-fluid justify-content-center align-items-center row px-sm-2 py-4 p-xl-4 over-x"
   id="third-rev"
   aria-label={`${thirdReviewer.fullName}'s testimonial`}
 >
-  <div class="intro-article col-sm-10 col-md-8 col-lg-9 col-xl-8">
+  <div
+    class="intro-article col-sm-10 col-md-8 col-lg-9 col-xl-8"
+    data-aos="fade-right"
+    data-aos-duration="1250"
+  >
     <Content />
   </div>
   <div class="col-sm-10 col-md-8 col-lg-6 col-xl-3">
-    <figure class="figure">
+    <figure class="figure" data-aos="fade-left" data-aos-duration="1250">
       <img
         src="/images/rev-img-3.jpg"
         class="figure-img img-fluid rounded"
         alt={`${thirdReviewer.fullName} smiling`}
         title={thirdReviewer.fullName}
         aria-labelledby="third-reviewer-caption"
+        data-aos="flip-left"
+        data-aos-duration="1250"
       >
       <figcaption class="text-center" id="third-reviewer-caption">
         <span class="rev-name">

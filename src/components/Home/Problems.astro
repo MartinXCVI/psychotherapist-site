@@ -5,30 +5,46 @@ const title: string = "Main Issues I Can Help With"
 ---
 
 <section
-  class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5"
+  class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 py-5 over-x"
   role="region"
   aria-labelledby="problems-title"
 >
-  <h2 class="mb-4 text-center" id="problems-title">
+  <h2 class="mb-4 text-center" id="problems-title" data-aos="zoom-in" data-aos-duration="1250">
     {title}
   </h2>
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+  <div class="container-fluid d-flex flex-column justify-content-center align-items-center over-x">
+    <ul
+      class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md"
+      data-aos="fade-left"
+      data-aos-duration="1250"
+    >
       <ProblemItem route="/help" className="anxiety" name="Anxiety" />
       <ProblemItem route="/help" className="depression" name="Depression" />
       <ProblemItem route="/help" className="trauma" name="Trauma" />
     </ul>
-    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+    <ul
+      class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md"
+      data-aos="fade-right"
+      data-aos-duration="1250"
+    >
       <ProblemItem route="/help" className="grief" name="Grief" />
       <ProblemItem route="/help" className="stress" name="Stress" />
       <ProblemItem route="/help" className="addiction" name="Addiction" />
     </ul>
-    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+    <ul
+      class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md"
+      data-aos="fade-left"
+      data-aos-duration="1250"
+    >
       <ProblemItem route="/help" className="phobias" name="Phobias" />
       <ProblemItem route="/help" className="burnout" name="Burnout" />
       <ProblemItem route="/help" className="insomnia" name="Insomnia" />
     </ul>
-    <ul class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md">
+    <ul
+      class="list-group min-vw-100 mb-0 mb-md-5 justify-content-evenly align-items-center list-group-horizontal-md"
+      data-aos="fade-right"
+      data-aos-duration="1250"
+    >
       <ProblemItem route="/help" className="loneliness" name="Loneliness" />
       <ProblemItem route="/help" className="anger" name="Anger" />
       <ProblemItem route="/help" className="guilt" name="Guilt" />

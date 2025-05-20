@@ -10,21 +10,32 @@ const { sophiaGallac } = testimonials
   aria-label="Testimonial section"
 >
   <!--- Picture --->
-  <figure class="figure d-flex flex-column justify-content-center align-items-center mb-4 ">
+  <figure class="figure d-flex flex-column justify-content-center align-items-center mb-4 over-x">
     <img
       src="/images/test-img.png"
-      class="figure-img img-fluid rounded"
+      class="figure-img img-fluid rounded "
       alt={`${sophiaGallac.fullName} smiling happily`}
       title={sophiaGallac.fullName}
       aria-labelledby="client-caption"
+      data-aos="zoom-out"
+      data-aos-duration="1250"
     >
-    <figcaption class="figure-caption text-center" id="client-caption">
+    <figcaption
+      class="figure-caption text-center"
+      id="client-caption"
+      data-aos="fade-left"
+      data-aos-duration="1250"
+    >
       {sophiaGallac.fullName}
     </figcaption>
     <hr class="caption-underline">
   </figure>
   <!--- Testimonial --->
-  <div class="container-fluid testimonial-index-text mb-4">
+  <div
+    class="container-fluid testimonial-index-text mb-4"
+    data-aos="zoom-in"
+    data-aos-duration="1250"
+  >
     <p class="text-center">
       <q>{sophiaGallac.testimonial}</q>
     </p>

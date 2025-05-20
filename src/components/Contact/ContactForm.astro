@@ -7,11 +7,16 @@ if(!ACCESS_KEY) console.error(`Missing environment variable: ${ACCESS_KEY}`)
 ---
 
 <section
-  class="container-fluid d-flex flex-column justify-content-center align-items-center py-5"
+  class="container-fluid d-flex flex-column justify-content-center align-items-center py-5 over-x"
   id="form-wrapper"
   aria-labelledby="contact-form-title"
 >
-  <h2 class="col-11 col-lg-7 col-xl-8 text-center mb-5 lh-base" id="contact-form-title">
+  <h2
+    class="col-11 col-lg-7 col-xl-8 text-center mb-5 lh-base"
+    id="contact-form-title"
+    data-aos="fade-down"
+    data-aos-duration="1500"
+  >
     {contactFormIntro}
   </h2>
   <form class="row g-3 col-12 col-lg-11" action={actionUrl} method="POST">

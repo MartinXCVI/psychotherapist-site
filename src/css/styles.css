@@ -1,3 +1,27 @@
+.text-center {
+  text-align: center;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.over-x {
+  overflow-x: hidden;
+}
+
+.over-y {
+  overflow-y: hidden;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
 *::selection {
   background-color: #254221;
   color: #f6f6f6;
@@ -207,6 +231,7 @@ body .main {
   color: #151515;
 }
 .landing-btns .contact-btn:hover {
+  border-color: #90A955;
   background-color: #90A955;
   color: #f6f6f6;
 }
@@ -215,6 +240,7 @@ body .main {
   color: #151515;
 }
 .landing-btns .about-btn:hover {
+  border-color: #ECF39E;
   background-color: #ECF39E;
   color: #151515;
 }

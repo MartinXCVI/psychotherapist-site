@@ -12,7 +12,8 @@
       "@sass/*": ["src/sass/*"],
       "@types/*": ["src/types/*"],
       "@utils/*": ["src/utils/*"]
-    }
+    },
+    "allowSyntheticDefaultImports": true,
   },
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
