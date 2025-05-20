@@ -142,7 +142,7 @@ p {
 }
 
 #index-header::after {
-  background-image: url("/images/index-hero.jpg");
+  background-image: url("/images/index-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +154,7 @@ p {
 }
 
 #about-header::after {
-  background-image: url("/images/about-hero.jpg");
+  background-image: url("/images/about-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,7 +166,7 @@ p {
 }
 
 #help-header::after {
-  background-image: url("/images/help-hero.jpg");
+  background-image: url("/images/help-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +178,7 @@ p {
 }
 
 #testimonials-header::after {
-  background-image: url("/images/testimonials-hero.jpg");
+  background-image: url("/images/testimonials-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +190,7 @@ p {
 }
 
 #contact-header::after {
-  background-image: url("/images/contact-hero.jpg");
+  background-image: url("/images/contact-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -202,7 +202,7 @@ p {
 }
 
 #error-main::after {
-  background-image: url("/images/error-hero.jpg");
+  background-image: url("/images/error-hero.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,7 +435,7 @@ body .main {
   inset: 0;
   z-index: -5;
   position: absolute;
-  background-image: url("/images/quotes-bg.jpg");
+  background-image: url("/images/quotes-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -501,7 +501,7 @@ body .main {
   inset: 0;
   position: absolute;
   z-index: -1;
-  background-image: url("/images/about-contact-bg.jpg");
+  background-image: url("/images/about-contact-bg.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -537,7 +537,7 @@ body .main {
   inset: 0;
   z-index: -1;
   position: absolute;
-  background-image: url("/images/help-bg.jpg");
+  background-image: url("/images/help-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -573,7 +573,7 @@ body .main {
   inset: 0;
   z-index: -1;
   position: absolute;
-  background-image: url("/images/help-bg-contact.jpg");
+  background-image: url("/images/help-bg-contact.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -629,7 +629,7 @@ body .main {
   inset: 0;
   z-index: -2;
   position: absolute;
-  background-image: url("/images/testimonials-bg-contact.jpg");
+  background-image: url("/images/testimonials-bg-contact.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -722,6 +722,9 @@ body .main {
   .testimonial-index .testimonial-index-text {
     width: 90%;
   }
+  #contact-header::after {
+    background-position-x: 65%;
+  }
 }
 @media all and (min-width: 481px) and (max-width: 767px) {
   .about-contact-div p {
@@ -739,7 +742,7 @@ body .main {
     min-width: 18rem;
   }
   .about-contact-bg::after {
-    background-image: url("/images/about-contact-bg-mobile.jpg");
+    background-image: url("/images/about-contact-bg-mobile.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

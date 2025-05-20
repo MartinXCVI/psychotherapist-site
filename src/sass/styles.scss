@@ -47,7 +47,7 @@
 }
 
 #index-header::after {
-  @include mx.bgCenter('/images/index-hero.jpg');
+  @include mx.bgCenter('/images/index-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -56,7 +56,7 @@
 }
 
 #about-header::after {
-  @include mx.bgCenter('/images/about-hero.jpg');
+  @include mx.bgCenter('/images/about-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -65,7 +65,7 @@
 }
 
 #help-header::after {
-  @include mx.bgCenter('/images/help-hero.jpg');
+  @include mx.bgCenter('/images/help-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -74,7 +74,7 @@
 }
 
 #testimonials-header::after {
-  @include mx.bgCenter('/images/testimonials-hero.jpg');
+  @include mx.bgCenter('/images/testimonials-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -83,7 +83,7 @@
 }
 
 #contact-header::after {
-  @include mx.bgCenter('/images/contact-hero.jpg');
+  @include mx.bgCenter('/images/contact-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -92,7 +92,7 @@
 }
 
 #error-main::after {
-  @include mx.bgCenter('/images/error-hero.jpg');
+  @include mx.bgCenter('/images/error-hero.webp');
   content: '';
   inset: 0;
   position: absolute;
@@ -251,7 +251,7 @@ body .main {
   inset: 0;
   z-index: -5;
   position: absolute;
-  @include mx.bgCenter('/images/quotes-bg.jpg');
+  @include mx.bgCenter('/images/quotes-bg.webp');
   opacity: 1;
 }
 
@@ -315,7 +315,7 @@ body .main {
   inset: 0;
   position: absolute;
   z-index: -1;
-  @include mx.bgTop('/images/about-contact-bg.jpg');
+  @include mx.bgTop('/images/about-contact-bg.webp');
   opacity: 0.8;
 }
 
@@ -348,7 +348,7 @@ body .main {
     inset: 0;
     z-index: -1;
     position: absolute;
-    @include mx.bgCenter('/images/help-bg.jpg');
+    @include mx.bgCenter('/images/help-bg.webp');
     background-attachment: fixed;
     opacity: 0.9;
   }
@@ -382,7 +382,7 @@ body .main {
     inset: 0;
     z-index: -1;
     position: absolute;
-    @include mx.bgCenter('/images/help-bg-contact.jpg');
+    @include mx.bgCenter('/images/help-bg-contact.webp');
     opacity: 0.8;
   }
 
@@ -435,7 +435,7 @@ body .main {
     inset: 0;
     z-index: -2;
     position: absolute;
-    @include mx.bgCenter('/images/testimonials-bg-contact.jpg');
+    @include mx.bgCenter('/images/testimonials-bg-contact.webp');
     opacity: 0.8;
   }
 }
@@ -532,6 +532,10 @@ body .main {
   .testimonial-index .testimonial-index-text {
     width: 90%;
   }
+
+  #contact-header::after {
+    background-position-x: 65%;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
@@ -557,7 +561,7 @@ body .main {
   }
 
   .about-contact-bg::after {
-    @include mx.bgTop('/images/about-contact-bg-mobile.jpg');
+    @include mx.bgTop('/images/about-contact-bg-mobile.webp');
   }
 }
 
